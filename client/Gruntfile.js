@@ -252,6 +252,16 @@ module.exports = function (grunt) {
       }
     },
 
+      ts: {
+	  options: {
+	      sourceMap: false
+	  },
+	  dev: {
+	      src: ["app/ts/*.ts"],
+	      out: 'app/scripts/ts.js'
+	  }
+      },
+
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
     // wish to use the Usemin blocks.
@@ -382,9 +392,12 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
+  grunt.loadNpmTasks('grunt-ts');
+  grunt.registerTask('default', ['ts']);
+
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
-    'build'
+      'build'
   ]);
 };
