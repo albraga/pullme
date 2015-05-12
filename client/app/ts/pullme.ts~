@@ -1,9 +1,0 @@
-module Pullme {
-
-    class User {
-
-	constructor(public id: number, public email: string) {
-	    
-	}
-    }
-}
