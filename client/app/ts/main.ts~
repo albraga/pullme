@@ -1,7 +1,17 @@
-module Pullme {
+/// <reference path="jquery/jquery.d.ts" />
+
+module Main {
+
+    public function teste() {
+	
+    }
 
     class User {
+	public vicinity: Array<Store>;
 	constructor(public id: number, public lat: number, public long: number, public  name: string,  public email: string) {    
+	}
+	function getStores(maxRange: number, productName: string, isDiscount: boolean = true) {
+	     
 	}
     }
 
@@ -15,13 +25,4 @@ module Pullme {
 	}
     }
 
-    class Vicinity {
-	public stores: Array<Store>;
-	constructor(public userLat: num, public userLong: num) {
-	}
-	function getStores(maxRange: number, productName: string, isDiscount: boolean = true) {
-	    this.userLat 
-	}
-    }
-    
 }

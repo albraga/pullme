@@ -257,7 +257,7 @@ module.exports = function (grunt) {
 	      sourceMap: false
 	  },
 	  dev: {
-	      src: ["app/ts/*.ts"],
+	      src: ["app/ts/main.ts"],
 	      out: 'app/scripts/ts.js'
 	  }
       },
