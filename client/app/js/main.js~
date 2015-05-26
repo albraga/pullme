@@ -1,0 +1,13 @@
+$(function() {
+
+var api = restful('http://pullme.pe.hu/rest/index.php/api/widget/1');
+
+var widget = api.all('widget');
+
+widget.get().then(function(response) {
+    var widgetEntity = response.body();
+    var wid = widgetEntity.data();
+    alert("Nome: " + wid.name);
+});
+
+});
