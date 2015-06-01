@@ -1,5 +1,5 @@
-var App;
-(function (App) {
+var pullme;
+(function (pullme) {
     var User = (function () {
         function User(id, lat, long, name, email) {
             this.id = id;
@@ -8,11 +8,9 @@ var App;
             this.name = name;
             this.email = email;
         }
-        User.prototype.getStores = function (maxRange, productName, isDiscount) {
-            if (isDiscount === void 0) { isDiscount = true; }
-        };
         return User;
     })();
+    pullme.User = User;
     var Product = (function () {
         function Product(id, name, isDiscount, category, price) {
             this.id = id;
@@ -35,4 +33,4 @@ var App;
         }
         return Store;
     })();
-})(App || (App = {}));
+})(pullme || (pullme = {}));
