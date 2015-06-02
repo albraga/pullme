@@ -160,7 +160,7 @@ module.exports = function (grunt) {
       }
     },
 
-    // Automatically inject Bower components into the HTML file
+    // Automatically inject Bower components to the HTML file
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
@@ -257,8 +257,8 @@ module.exports = function (grunt) {
 	      sourceMap: false
 	  },
 	  dev: {
-	      src: ["app/ts/main.ts"],
-	      out: 'app/scripts/ts.js'
+	      src: ["app/ts/*.ts"],
+	      out: 'app/js/model.js'
 	  }
       },
 
@@ -284,9 +284,14 @@ module.exports = function (grunt) {
     //     }
     //   }
     // },
-    // concat: {
-    //   dist: {}
-    // },
+    concat: {
+	dist: {
+	    // the files to concatenate
+	    src: ['app/js/model.js','app/js/main.js'],
+	    // the location of the resulting JS file
+	    dest: 'app/scripts/app.js'
+	}
+    },
 
     // Copies remaining files to places other tasks can use
     copy: {
@@ -377,8 +382,11 @@ module.exports = function (grunt) {
     ]);
   });
 
+grunt.loadNpmTasks('grunt-ts');
+    
   grunt.registerTask('build', [
-    'clean:dist',
+      'clean:dist',
+      'ts',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
@@ -392,8 +400,8 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
-  grunt.loadNpmTasks('grunt-ts');
-  grunt.registerTask('default', ['ts']);
+  
+//  grunt.registerTask('default', ['ts']);
 
   grunt.registerTask('default', [
     'newer:jshint',

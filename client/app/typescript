@@ -1,0 +1,2806 @@
+Script started on Mon Jun  1 16:57:18 2015
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ cd  cd scripts/
+]0;coder@4ef8a728f653: ~/pullme/client/app/scriptscoder@4ef8a728f653:~/pullme/client/app/scripts$ ls
+app.js
+]0;coder@4ef8a728f653: ~/pullme/client/app/scriptscoder@4ef8a728f653:~/pullme/client/app/scripts$ emacs app.js 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m [1m[36mvar[0m[39;49m [33mApp[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mApp[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K
+[32m10 [39;49m        }[K
+[32m11 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+[A
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }[K
+[32m13 [39;49m        };[K
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {[K
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[32m19 [39;49m            [35mthis[39;49m.name = name;[K
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mapp.js      [0m[39;49m[27m[7m   Top L1     (Javascript) ----------------------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25lC-x[2d[?12l[?25h[?12;25h[24d[?25l-[2;4H[?12l[?25h[?12;25h[24d[?25l C-c[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25l(No files need saving)[2;4H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/scriptscoder@4ef8a728f653:~/pullme/client/app/scripts$ grunt build
+[4mRunning "clean:dist" (clean) task[24m
+[32m>> [39m8 paths cleaned.
+
+[4mRunning "ts:dev" (ts) task[24m
+[33mCompiling...[39m
+[36mCleared fast compile cache for target: dev[39m
+[36mFast compile will not work when --out is specified. Ignoring fast compilation[39m
+Using tsc v1.4.1
+
+
+
+[32mTypeScript compilation complete: 1.09s for 1 typescript files[39m
+
+[4mRunning "wiredep:app" (wiredep) task[24m
+
+[4mRunning "useminPrepare:html" (useminPrepare) task[24m
+Configuration changed for [36mconcat[39m, [36muglify[39m, [36mcssmin[39m
+
+[4mRunning "concurrent:dist" (concurrent) task[24m
+[32m>> [39mWarning: There are more tasks than your concurrency limit. After this limit[32m
+>> [39mis reached no further tasks will be run until the current tasks are[32m
+>> [39mcompleted. You can adjust the limit in the concurrent task options
+    
+    [4mRunning "copy:styles" (copy) task[24m
+    Copied [36m1[39m files
+    
+    [32mDone, without errors.[39m
+    
+    
+    Execution Time (2015-06-01 16:57:40 UTC)
+    loading tasks  1.6s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 99%
+    Total 1.6s
+        
+    [4mRunning "imagemin:dist" (imagemin) task[24m
+    Minified 0 images (saved 0 B)
+    
+    [32mDone, without errors.[39m
+    
+    
+    Execution Time (2015-06-01 16:57:40 UTC)
+    loading tasks  1.6s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 99%
+    Total 1.6s
+        
+    [4mRunning "svgmin:dist" (svgmin) task[24m
+    Total saved: 0 B
+    
+    [32mDone, without errors.[39m
+    
+    
+    Execution Time (2015-06-01 16:57:42 UTC)
+    loading tasks  1.5s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 97%
+    svgmin:dist    46ms  ▇▇ 3%
+    Total 1.5s
+    
+[4mRunning "autoprefixer:dist" (autoprefixer) task[24m
+File [36m.tmp/styles/main.css[39m created.
+
+[4mRunning "concat:dist" (concat) task[24m
+File [36mapp/scripts/app.js[39m created.
+
+[4mRunning "concat:generated" (concat) task[24m
+File [36m.tmp/concat/styles/vendor.css[39m created.
+File [36m.tmp/concat/styles/main.css[39m created.
+File [36m.tmp/concat/scripts/vendor.js[39m created.
+File [36m.tmp/concat/scripts/plugins.js[39m created.
+File [36m.tmp/concat/scripts/main.js[39m created.
+
+[4mRunning "cssmin:generated" (cssmin) task[24m
+File [36mdist/styles/vendor.css[39m created: [32m132.55 kB[39m → [32m108.57 kB[39m
+File [36mdist/styles/main.css[39m created: [32m1.45 kB[39m → [32m735 B[39m
+
+[4mRunning "uglify:generated" (uglify) task[24m
+
+[4mRunning "copy:dist" (copy) task[24m
+Copied [36m8[39m files
+
+[4mRunning "rev:dist" (rev) task[24m
+dist/scripts/main.js [32m>> [39mc9eec4de.main.js
+dist/scripts/plugins.js [32m>> [39mcb7562c6.plugins.js
+dist/scripts/vendor.js [32m>> [39me0099dcf.vendor.js
+dist/styles/main.css [32m>> [39ma5896f90.main.css
+dist/styles/vendor.css [32m>> [39m9c307a9d.vendor.css
+dist/favicon.ico [32m>> [39m6df2b309.favicon.ico
+
+[4mRunning "usemin:html" (usemin) task[24m
+Replaced [36m1[39m reference to assets
+
+[4mRunning "usemin:css" (usemin) task[24m
+Replaced [36m2[39m references to assets
+
+[4mRunning "htmlmin:dist" (htmlmin) task[24m
+Minified [36mdist/index.html[39m 2.48 kB → 2.11 kB
+
+[32mDone, without errors.[39m
+
+
+[4mExecution Time[24m[90m (2015-06-01 16:57:37 UTC)[39m
+loading tasks      [34m1.5s[39m  [34m▇▇▇▇▇▇ 13%[39m
+ts:dev             [34m1.1s[39m  [34m▇▇▇▇▇ 10%[39m
+wiredep:app       [34m177ms[39m  [34m▇ 2%[39m
+concurrent:dist    [34m3.9s[39m  [34m▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 34%[39m
+cssmin:generated  [34m207ms[39m  [34m▇ 2%[39m
+uglify:generated   [34m4.4s[39m  [34m▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 38%[39m
+[35mTotal 11.5s[39m
+
+]0;coder@4ef8a728f653: ~/pullme/client/app/scriptscoder@4ef8a728f653:~/pullme/client/app/scripts$ grunt buildemacs app.js 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m [1m[36mvar[0m[39;49m [33mpullme[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mpullme[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K
+[32m10 [39;49m        }[K
+[32m11 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+[A
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }[K
+[32m13 [39;49m        };[K
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {[K
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[32m19 [39;49m            [35mthis[39;49m.name = name;[K
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mapp.js      [0m[39;49m[27m[7m   Top L1     (Javascript) ----------------------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m10[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h
+[23;35H[?25l[7m2[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;34H[?25l[7m20[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[2;2H[?25l[32m1 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }
+[32m13 [39;49m        };[K
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[C[32m9 [39;49m            [35mthis[39;49m.name = name;
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = price;[K
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m2[39;49m
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m[2P
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m2[39;49m
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;[K
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[7m21% L21[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;34H[?25l[7m30[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[H
+[?25l[32m21 [39;49m            [35mthis[39;49m.category = category;[K
+[32m22 [39;49m            [35mthis[39;49m.price = price;
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25 [39;49m    })();[K
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;[K
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m
+[32m31 [39;49m            [35mthis[39;49m.name = name;[K
+[32m32 [39;49m            [35mthis[39;49m.address = address;[K
+[32m33 [39;49m            [35mthis[39;49m.phone = phon
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }[K
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();[K
+[32m38 [39;49m})(pullme || (pullme = {}));[K
+[32m39 [39;49m[K
+[32m40 [39;49m$([1m[36mfunction[0m[39;49m() {[K
+[32m41 [39;49m[K[23;29H[7m51% L31[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;34H[?25l[7m40[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[H
+[?25l[32m32 [39;49m            [35mthis[39;49m.address = address;[K
+[32m33 [39;49m            [35mthis[39;49m.phone = phon
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }[K
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();[K
+[32m38 [39;49m})(pullme || (pullme = {}));[K
+[32m39 [39;49m[K
+[32m40 [39;49m$([1m[36mfunction[0m[39;49m() {[K
+[32m41 [39;49m[K
+[32m42 [39;49m    $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+[32m43 [39;49m        alert(data[0]);[K
+[32m44 [39;49m    });[K
+[32m45 [39;49m    alert([32m"nada!"[39;49m);[K
+[32m46 [39;49m[K
+[32m47 [39;49m});[K
+[32m48 [39;49m[K
+[K
+[K
+[K
+[K[23;29H[7mBot L42[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m39[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[?25l[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = pric
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25 [39;49m    })();[K
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;
+[32m31 [39;49m            [35mthis[39;49m.name = name;[K
+[32m32 [39;49m            [35mthis[39;49m.address = address;
+[32m33 [39;49m            [35mthis[39;49m.phone = phone;
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();
+[32m38 [39;49m})(pullme || (pullme = {}));
+[32m39 [39;49m
+[32m40 [39;49m$([1m[36mfunction[0m[39;49m() {
+[32m41 [39;49m[23;29H[7m51% L31[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;34H[?25l[7m40[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[H
+[?25l[32m32 [39;49m            [35mthis[39;49m.address = address;[K
+[32m33 [39;49m            [35mthis[39;49m.phone = phon
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }[K
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();[K
+[32m38 [39;49m})(pullme || (pullme = {}));[K
+[32m39 [39;49m[K
+[32m40 [39;49m$([1m[36mfunction[0m[39;49m() {[K
+[32m41 [39;49m[K
+[32m42 [39;49m    $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+[32m43 [39;49m        alert(data[0]);[K
+[32m44 [39;49m    });[K
+[32m45 [39;49m    alert([32m"nada!"[39;49m);[K
+[32m46 [39;49m[K
+[32m47 [39;49m});[K
+[32m48 [39;49m[K
+[K
+[K
+[K
+[K[23;29H[7mBot L42[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m39[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[?25l[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = pric
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25 [39;49m    })();[K
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;
+[32m31 [39;49m            [35mthis[39;49m.name = name;[K
+[32m32 [39;49m            [35mthis[39;49m.address = address;
+[32m33 [39;49m            [35mthis[39;49m.phone = phone;
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();
+[32m38 [39;49m})(pullme || (pullme = {}));
+[32m39 [39;49m
+[32m40 [39;49m$([1m[36mfunction[0m[39;49m() {
+[32m41 [39;49m[23;29H[7m51% L31[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m29[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[?25l[32m10 [39;49m        }[K
+[32m11 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }
+[32m13 [39;49m        };
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[32m19[39;49m
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;
+[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = price;[K
+[32m23[39;49m
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25[39;49m
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[7m21% L20[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;34H[?25l[7m19[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[A[23;35H[?25l[7m0[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[1;22r[2;1H[9L[1;24r[2;1H[?25l[32m1 [39;49m [1m[36mvar[0m[39;49m [33mpullme[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mpullme[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K[23;29H[7mTop L9 [0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[24;1H[?25lBeginning of buffer[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m10[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h
+[23;35H[?25l[7m2[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;34H[?25l[7m20[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[2;2H[?25l[32m1 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }
+[32m13 [39;49m        };[K
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[C[32m9 [39;49m            [35mthis[39;49m.name = name;
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = price;[K
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m2[39;49m
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m[2P
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m2[39;49m
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;[K
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[7m21% L21[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;34H[?25l[7m30[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[H
+[?25l[32m21 [39;49m            [35mthis[39;49m.category = category;[K
+[32m22 [39;49m            [35mthis[39;49m.price = price;
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25 [39;49m    })();[K
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;[K
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m
+[32m31 [39;49m            [35mthis[39;49m.name = name;[K
+[32m32 [39;49m            [35mthis[39;49m.address = address;[K
+[32m33 [39;49m            [35mthis[39;49m.phone = phon
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }[K
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();[K
+[32m38 [39;49m})(pullme || (pullme = {}));[K
+[32m39 [39;49m[K
+[32m40 [39;49m$([1m[36mfunction[0m[39;49m() {[K
+[32m41 [39;49m[K[23;29H[7m51% L31[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;34H[?25l[7m40[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[H
+[?25l[32m32 [39;49m            [35mthis[39;49m.address = address;[K
+[32m33 [39;49m            [35mthis[39;49m.phone = phon
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }[K
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();[K
+[32m38 [39;49m})(pullme || (pullme = {}));[K
+[32m39 [39;49m[K
+[32m40 [39;49m$([1m[36mfunction[0m[39;49m() {[K
+[32m41 [39;49m[K
+[32m42 [39;49m    $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+[32m43 [39;49m        alert(data[0]);[K
+[32m44 [39;49m    });[K
+[32m45 [39;49m    alert([32m"nada!"[39;49m);[K
+[32m46 [39;49m[K
+[32m47 [39;49m});[K
+[32m48 [39;49m[K
+[K
+[K
+[K
+[K[23;29H[7mBot L42[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m39[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[?25l[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = pric
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25 [39;49m    })();[K
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;
+[32m31 [39;49m            [35mthis[39;49m.name = name;[K
+[32m32 [39;49m            [35mthis[39;49m.address = address;
+[32m33 [39;49m            [35mthis[39;49m.phone = phone;
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();
+[32m38 [39;49m})(pullme || (pullme = {}));
+[32m39 [39;49m
+[32m40 [39;49m$([1m[36mfunction[0m[39;49m() {
+[32m41 [39;49m[23;29H[7m51% L31[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m29[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[?25l[32m10 [39;49m        }[K
+[32m11 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }
+[32m13 [39;49m        };
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[32m19[39;49m
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;
+[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = price;[K
+[32m23[39;49m
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25[39;49m
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[7m21% L20[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;34H[?25l[7m19[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[A[23;35H[?25l[7m0[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[1;22r[2;1H[9L[1;24r[2;1H[?25l[32m1 [39;49m [1m[36mvar[0m[39;49m [33mpullme[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mpullme[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K[23;29H[7mTop L9 [0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[24;1H[?25lBeginning of buffer[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25l(No files need saving)[2;4H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/scriptscoder@4ef8a728f653:~/pullme/client/app/scripts$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ ls
+[0m[01;34mbower_components[0m  [01;34mimages[0m      [01;34mjs[0m          [01;34mscripts[0m  [01;34mts[0m
+favicon.ico       index.html  robots.txt  [01;34mstyles[0m   typescript
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ cd ts
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ ls
+model.ts  model.ts~
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ rm model.ts~
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ emq acs model.ts 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools typescript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m [1m[36mmodule[0m[39;49m pullme {[K
+[32m2 [39;49m[K
+[32m3 [39;49m     [1m[36mclass[0m[39;49m User {[K
+[32m4 [39;49m         [1m[36mpublic[0m[39;49m vicinity: Array<Store>;[K
+[32m5 [39;49m         [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+[A
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m  name: [1m[36mstring[0m[39;49m,  [1m[36mpublic[0m[39;49m email: [1m[36mstring[0m[39;49m) {[K
+[32m6 [39;49m         }[K
+[32m7 [39;49m         getStores(maxRange: [1m[36mnumber[0m[39;49m, productName: [1m[36mstring[0m[39;49m, isDiscount: boolean\
+[A
+    = [1m[36mtrue[0m[39;49m) {[K
+[32m8 [39;49m[K
+[32m9 [39;49m         }[K
+[32m10 [39;49m    }[K
+[32m11 [39;49m[K
+[32m12 [39;49m    [1m[36mclass[0m[39;49m Product {[K
+[32m13 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m isDiscoun\
+[A
+   t: boolean, [1m[36mpublic[0m[39;49m category: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m price: [1m[36mnumber[0m[39;49m) {[K
+[32m14 [39;49m        }[K
+[32m15 [39;49m    }[K
+[32m16 [39;49m[K
+[32m17 [39;49m    [1m[36mclass[0m[39;49m Store {[K
+[32m18 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+[A
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmodel.ts    [0m[39;49m[27m[7m   Top L1     (typescript) ----------------------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h
+[23;34H[?25l[7m6[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[24;1H[?25lMark set[9;4H[?12l[?25h[?12;25h[24;1H[K[9;4H[?25l[37m[44m        getStores(maxRange: [39;49m[1m[37m[44mnumber[0m[39;49m[37m[44m, productName: [39;49m[1m[37m[44mstring[0m[39;49m[37m[44m, isDiscount: boolean[39;49m[10;4H[?12l[?25h[?12;25h[?25l[37m[44m = [39;49m[1m[37m[44mtrue[0m[39;49m[37m[44m) {                                                                   [39;49m
+[23;34H[7m8[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[?25l[37m[44m                                                                             [39;49m
+[23;34H[7m9[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[?25l[37m[44m        }                                                                    [39;49m
+[23;34H[7m10[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[9d[?25l    }[K
+[32m8 [39;49m[K
+[32m9 [39;49m     [1m[36mclass[0m[39;49m Product {[K
+[32m10 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m isDiscoun\
+   t: boolean, [1m[36mpublic[0m[39;49m category: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m price: [1m[36mnumber[0m[39;49m) {[14;12H}
+	}[K
+[K
+[32m14 [39;49m    [1m[36mclass[0m[39;49m Store {[K
+[C[32m5 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m address: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m phone: [1m[36mstring[0m[39;49m, [1m[36mpubli[0m[39;49m\
+   [1m[36mc[0m[39;49m products: Array<Product>) {
+[C[32m6 [39;49m        }[K
+[C[32m7 [39;49m    }[K
+[7m**--F1  [0m[39;49m[27m[7m[1mmodel.ts    [0m[39;49m[27m[7m   Top L7 [0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[A[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h
+[23;34H[?25l[7m6[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m10[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h
+[23;35H[?25l[7m1[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h
+
+[23;35H[?25l[7m6[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[2;2H[?25l[32m0 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m isDiscoun\
+   t: boolean, [1m[36mpublic[0m[39;49m category: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m price: [1m[36mnumber[0m[39;49m) {
+[32m11 [39;49m        }[K
+[32m12 [39;49m    }[K
+[32m13 [39;49m[K
+[32m14 [39;49m    [1m[36mclass[0m[39;49m Store {[K
+[32m15 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m address: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m phone: [1m[36mstring[0m[39;49m, [1m[36mpubli[0m[39;49m\
+   [1m[36mc[0m[39;49m products: Array<Product>) {
+[32m16 [39;49m        }[K
+[C[32m7 [39;49m    }[K
+[32m18 [39;49m[K
+[32m9 [39;49m}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[23;29H[7mBot L18[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[A[A[23;35H[?25l[7m4[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[A[?25l[32m [39;49m [1m[36mmodule[0m[39;49m pullme {[K
+[32m2 [39;49m[K
+[32m3 [39;49m     [1m[36mclass[0m[39;49m User {
+[32m4 [39;49m         [1m[36mpublic[0m[39;49m vicinity: Array<Store>;
+[32m5 [39;49m         [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m  name: [1m[36mstring[0m[39;49m,  [1m[36mpublic[0m[39;49m email: [1m[36mstring[0m[39;49m) {
+[32m6 [39;49m         }[K
+[32m7 [39;49m     }[K
+[32m8 [39;49m[K
+[32m9 [39;49m     [1m[36mclass[0m[39;49m Product {
+[C[32m0 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m isDiscoun\
+   t: boolean, [1m[36mpublic[0m[39;49m category: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m price: [1m[36mnumber[0m[39;49m) {
+[C[32m1 [39;49m        }
+[32m12 [39;49m    }
+[32m13 [39;49m
+[32m14 [39;49m    [1m[36mclass[0m[39;49m Store {
+[32m15 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+[19;4H[1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m address: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m phone: [1m[36mstring[0m[39;49m, [1m[36mpubli[0m[39;49m\
+[20;4H[1m[36mc[0m[39;49m products: Array<Product>) {
+[32m16 [39;49m        }
+[32m17 [39;49m    }[23;29H[7mTop L9 [0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[A[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[24;1H[?25lBeginning of buffer[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h
+[23;34H[?25l[7m6[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m10[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h
+[23;35H[?25l[7m1[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h
+
+[23;35H[?25l[7m6[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h
+
+[?25lAuto-saving...[22;4H[?12l[?25h[?12;25h[24;15H[?25ldone[22;4H[?12l[?25h[?12;25h
+
+[K[2;2H[?25l[32m0 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m isDiscoun\
+   t: boolean, [1m[36mpublic[0m[39;49m category: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m price: [1m[36mnumber[0m[39;49m) {
+[32m11 [39;49m        }[K
+[32m12 [39;49m    }[K
+[32m13 [39;49m[K
+[32m14 [39;49m    [1m[36mclass[0m[39;49m Store {[K
+[32m15 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m address: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m phone: [1m[36mstring[0m[39;49m, [1m[36mpubli[0m[39;49m\
+   [1m[36mc[0m[39;49m products: Array<Product>) {
+[32m16 [39;49m        }[K
+[C[32m7 [39;49m    }[K
+[32m18 [39;49m[K
+[32m9 [39;49m}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[23;29H[7mBot L18[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[24;1H[?25lEnd of buffer[14;5H[?12l[?25h[?12;25h[24;1H[K[23;35H[?25l[7m8[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[A[A[23;35H[?25l[7m4[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[A[?25l[32m [39;49m [1m[36mmodule[0m[39;49m pullme {[K
+[32m2 [39;49m[K
+[32m3 [39;49m     [1m[36mclass[0m[39;49m User {
+[32m4 [39;49m         [1m[36mpublic[0m[39;49m vicinity: Array<Store>;
+[32m5 [39;49m         [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m  name: [1m[36mstring[0m[39;49m,  [1m[36mpublic[0m[39;49m email: [1m[36mstring[0m[39;49m) {
+[32m6 [39;49m         }[K
+[32m7 [39;49m     }[K
+[32m8 [39;49m[K
+[32m9 [39;49m     [1m[36mclass[0m[39;49m Product {
+[C[32m0 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m isDiscoun\
+   t: boolean, [1m[36mpublic[0m[39;49m category: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m price: [1m[36mnumber[0m[39;49m) {
+[C[32m1 [39;49m        }
+[32m12 [39;49m    }
+[32m13 [39;49m
+[32m14 [39;49m    [1m[36mclass[0m[39;49m Store {
+[32m15 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+[19;4H[1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m address: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m phone: [1m[36mstring[0m[39;49m, [1m[36mpubli[0m[39;49m\
+[20;4H[1m[36mc[0m[39;49m products: Array<Product>) {
+[32m16 [39;49m        }
+[32m17 [39;49m    }[23;29H[7mTop L9 [0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[A[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[24;1H[?25lBeginning of buffer[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25lSaving file /home/coder/pullme/client/app/ts/model.ts...[2;4H[?12l[?25h[?12;25h[24;1H[?25lWrote /home/coder/pullme/client/app/ts/model.ts[K[2;4H[?12l[?25h[?12;25h[23;6H[?25l[7m--[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25lC-c[2d[?12l[?25h[?12;25h[24d[?25l-[2;4H[?12l[?25h[?12;25h[24d[?25l ESC[2;4H[?12l[?25h[?12;25h[24;8H[?25l-[2;4H[?12l[?25h[?12;25h[24;8H[?25l ESC[2;4H[?12l[?25h[?12;25h[24;12H[?25l-[2;4H[?12l[?25h[?12;25h[24;12H[?25l ESC[2;4H[?12l[?25h[?12;25h[24;1H[?25lESC-[K[2;4H[?12l[?25h[?12;25h[24d[?25l C-x[2;4H[?12l[?25h[?12;25h[24;1H[?25ltest[K[2;4H[?12l[?25h[?12;25h[24;1H[?25lSearch failed: "\\_<function\\_>"[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25lESC[2d[?12l[?25h[?12;25h[24d[?25l-[2;4H[?12l[?25h[?12;25h[24d[?25l C-x[2;4H[?12l[?25h[?12;25h[24;1H[?25ltest[K[2;4H[?12l[?25h[?12;25h[24;1H[?25lSearch failed: "\\_<function\\_>"[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25l(No files need saving)[2;4H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ ls
+model.ts  model.ts~
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ cd ..
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ ls
+[0m[01;34mclient[0m  [01;34mserver[0m
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ ls -la
+total 20
+drwxr-xr-x  5 coder coder 4096 May 10 16:09 [0m[01;34m.[0m
+drwxr-xr-x 28 coder coder 4096 Jun  1 13:34 [01;34m..[0m
+drwxr-xr-x  8 coder coder 4096 Jun  1 13:36 [01;34m.git[0m
+drwxr-xr-x  9 coder coder 4096 Jun  1 16:57 [01;34mclient[0m
+drwxr-xr-x  3 coder coder 4096 May 29 14:01 [01;34mserver[0m
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ cd client
+]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ ls
+Gruntfile.js  bower.json        [0m[01;34mdist[0m          package.json
+[01;34mapp[0m           [01;34mbower_components[0m  [01;34mnode_modules[0m  [01;34mtest[0m
+]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ ls -la
+total 80
+drwxr-xr-x  9 coder coder 4096 Jun  1 16:57 [0m[01;34m.[0m
+drwxr-xr-x  5 coder coder 4096 May 10 16:09 [01;34m..[0m
+-rw-r--r--  1 coder coder   38 May 10 16:08 .bowerrc
+-rw-r--r--  1 coder coder  415 May 10 16:08 .editorconfig
+-rw-r--r--  1 coder coder   11 May 10 16:08 .gitattributes
+-rw-r--r--  1 coder coder   40 May 10 16:09 .gitignore
+-rw-r--r--  1 coder coder  353 May 10 16:08 .jshintrc
+drwxr-xr-x  4 coder coder 4096 Jun  1 16:57 [01;34m.tmp[0m
+drwxr-xr-x  3 coder coder 4096 Jun  1 16:57 [01;34m.tscache[0m
+-rw-r--r--  1 coder coder   27 May 10 16:09 .yo-rc.json
+-rw-r--r--  1 coder coder 9845 Jun  1 16:51 Gruntfile.js
+drwxr-xr-x  8 coder coder 4096 Jun  1 16:57 [01;34mapp[0m
+-rw-r--r--  1 coder coder   92 May 10 16:08 bower.json
+drwxr-xr-x  4 coder coder 4096 May 10 16:09 [01;34mbower_components[0m
+drwxr-xr-x  5 coder coder 4096 Jun  1 16:57 [01;34mdist[0m
+drwxr-xr-x 26 coder coder 4096 May 10 16:09 [01;34mnode_modules[0m
+-rw-r--r--  1 coder coder  904 May 10 16:09 package.json
+drwxr-xr-x  4 coder coder 4096 May 10 16:08 [01;34mtest[0m
+]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ emacs .git
+.gitattributes  .gitignore      
+]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ emacs .gitignore 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25le either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.3); us\
+[A[2d[?12l[?25h[?12;25h[24d[?25luse `cl-labels' instead.[K[23;37Hlabels' is an obsolete macro (as of 24.3); [H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[32m1 [39;49mnode_modules[K
+[32m2 [39;49mdist[K
+[32m3 [39;49m.tmp[K
+[32m4 [39;49mbower_components[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m.gitignore  [0m[39;49m[27m[7m   All L1    Git-master  (Fundamental) ----------------[0m[39;49m[27m
+[A[2;3H[?12l[?25h[?12;25h[24;1H[K[2;3H[24;1H[?25l(No files need saving)[2;3H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ emacs .gitattributes 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25le either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.3); us\
+[A[2d[?12l[?25h[?12;25h[24d[?25luse `cl-labels' instead.[K[23;37Hlabels' is an obsolete macro (as of 24.3); [H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[32m1 [39;49m* text=auto[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m.gitattributes[0m[39;49m[27m[7m   All L1    Git-master  (Fundamental) --------------[0m[39;49m[27m
+[A[2;3H[?12l[?25h[?12;25h[24;1H[K[2;3H[24;1H[?25l(No files need saving)[2;3H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ mv .gitignore ../   ~/pullme/
+]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ cd ..
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ ls
+[0m[01;34mclient[0m  [01;34mserver[0m
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ ls -la] 
+total 24
+drwxr-xr-x  5 coder coder 4096 Jun  1 17:05 [0m[01;34m.[0m
+drwxr-xr-x 28 coder coder 4096 Jun  1 13:34 [01;34m..[0m
+drwxr-xr-x  8 coder coder 4096 Jun  1 17:05 [01;34m.git[0m
+-rw-r--r--  1 coder coder   40 May 10 16:09 .gitignore
+drwxr-xr-x  9 coder coder 4096 Jun  1 17:05 [01;34mclient[0m
+drwxr-xr-x  3 coder coder 4096 May 29 14:01 [01;34mserver[0m
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ emacs .git
+.git/       .gitignore  
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ emacs .gitignore 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25lither `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.3); use e\
+[A[2d[?12l[?25h[?12;25h[24d[?25l `cl-labels' instead.[K[23;34Hlabels' is an obsolete macro (as of 24.3); us[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[32m1 [39;49mnode_modules[K
+[32m2 [39;49mdist[K
+[32m3 [39;49m.tmp[K
+[32m4 [39;49mbower_components[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m.gitignore  [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2;3H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;3H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;3H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;3H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;3H[?12l[?25h[?12;25h[?25l[32m5 [39;49m+[23;6H[7m**[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[K[6;3H[?25l[32m5 [39;49m*[?12l[?25h[?12;25h[?25l~[?12l[?25h[?12;25h[24;1H[?25lSaving file /home/coder/pullme/.gitignore...[6;5H[?12l[?25h[?12;25h[24;1H[?25lWrote /home/coder/pullme/.gitignore[K[6;5H[?12l[?25h[?12;25h[23;6H[?25l[7m--[0m[39;49m[27m[6;5H[?12l[?25h[?12;25h[24;1H[K[6;5H[24;1H[?25l(No files need saving)[6;5H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ cd client/
+]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ ls
+Gruntfile.js  bower.json        [0m[01;34mdist[0m          package.json
+[01;34mapp[0m           [01;34mbower_components[0m  [01;34mnode_modules[0m  [01;34mtest[0m
+]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ cd app/
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ ls
+[0m[01;34mbower_components[0m  [01;34mimages[0m      [01;34mjs[0m          [01;34mscripts[0m  [01;34mts[0m
+favicon.ico       index.html  robots.txt  [01;34mstyles[0m   typescript
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ cdj  js
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ ls
+main.js  model.js
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ cd main.js 
+bash: cd: main.js: Not a directory
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs main.js 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m$([1m[36mfunction[0m[39;49m() {[K
+[32m2 [39;49m[K
+[32m3 [39;49m    $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m4 [39;49m        alert(data[0]);[K
+[32m5 [39;49m    });[K
+[32m6 [39;49m    alert([32m"nada!"[39;49m);[K
+[32m7 [39;49m[K
+[32m8 [39;49m});[K
+[32m9 [39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L1    Git-master  (Javascript) -----------------[0m[39;49m[27m
+[A[2;3H[?12l[?25h[?12;25h[24;1H[K[H[?25l[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m[K
+[32m2 [39;49m $([1m[36mfunction[0m[39;49m() {[K
+[32m3 [39;49m[K
+[32m4 [39;49m     $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m5 [39;49m         alert(data[0]);[K
+[32m6 [39;49m     });[K
+[32m7 [39;49m     alert([32m"nada!"[39;49m);[K
+[32m8 [39;49m[K
+[32m9 [39;49m });[K
+[32m10 [39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:**--F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L2    Git-master  (Javascript) -----------------[0m[39;49m[27m
+[A[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[24;1H[?25lBeginning of buffer[2;4H[?12l[?25h[?12;25h[24;1H[K[H[?25l[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m$([1m[36mfunction[0m[39;49m() {[K
+[32m2 [39;49m[K
+[32m3 [39;49m    $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m4 [39;49m        alert(data[0]);[K
+[32m5 [39;49m    });[K
+[32m6 [39;49m    alert([32m"nada!"[39;49m);[K
+[32m7 [39;49m[K
+[32m8 [39;49m});[K
+[32m9 [39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:**--F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L1    Git-master  (Javascript) -----------------[0m[39;49m[27m
+[A[2;3H[?12l[?25h[?12;25h[24;1H[K[H[?25l[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m[K
+[32m2 [39;49m $([1m[36mfunction[0m[39;49m() {[K
+[32m3 [39;49m[K
+[32m4 [39;49m     $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m5 [39;49m         alert(data[0]);[K
+[32m6 [39;49m     });[K
+[32m7 [39;49m     alert([32m"nada!"[39;49m);[K
+[32m8 [39;49m[K
+[32m9 [39;49m });[K
+[32m10 [39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:**--F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L2    Git-master  (Javascript) -----------------[0m[39;49m[27m
+[A[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h
+[K
+[C[?25l$([1m[36mfunction[0m[39;49m() {[5;3H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);
+	});[K
+alert([32m"nada!"[39;49m);[10;3H[K
+[C});
+[32m11 [39;49m[23;34H[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h
+
+[K
+[C[?25l$([1m[36mfunction[0m[39;49m() {[6;3H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);
+	});[K
+alert([32m"nada!"[39;49m);[11;4H[K
+});
+[32m12 [39;49m[23;34H[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[?25lp[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25lm[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lm[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h	[?25l=[?12l[?25h[?12;25h[C[24;1H[?25lAuto-saving...[2;18H[?12l[?25h[?12;25h[24;15H[?25ldone[2;18H[?12l[?25h[?12;25h[24;1H[K[H
+		[K	[K[K[K[K[K[K[K[K[K[K[K[C[24;1H[?25lBeginning of buffer[2;4H[?12l[?25h[?12;25h[24;1H[K[4;4H[?25l$([1m[36mfunction[0m[39;49m() {[5;3H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);[K
+	});[K
+alert([32m"nada!"[39;49m);[10;3H[K
+[C});
+[K
+[K[2;4H[?12l[?25h[?12;25h
+
+[K
+[C[?25l$([1m[36mfunction[0m[39;49m() {[6;3H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);
+	});[K
+alert([32m"nada!"[39;49m);[11;4H[K
+});
+[32m12 [39;49m[23;34H[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h
+[?25l$([1m[36mfunction[0m[39;49m() {[5;3H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);[K
+	});[K
+alert([32m"nada!"[39;49m);[10;3H[K
+[C});
+[K
+[K[3;4H[?12l[?25h[?12;25h
+[K
+[C[?25l$([1m[36mfunction[0m[39;49m() {[6;3H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);
+	});[K
+alert([32m"nada!"[39;49m);[11;4H[K
+});
+[32m12 [39;49m[23;34H[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[?25lf[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[2;4H[?25l[1m[36mfunction[0m[39;49m[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25l[46m([39;49m)[?12l[?25h[?12;25h[?25l([C[?12l[?25h[?12;25h[C[?25l{[?12l[?25h[?12;25h[5;3H[K
+[C[?25l$([1m[36mfunction[0m[39;49m() {[7;3H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);
+	});[K
+alert([32m"nada!"[39;49m);[12;4H[K
+});
+[32m13 [39;49m[23;34H[7m2[0m[39;49m[27m[3;8H[?12l[?25h[?12;25h[6;3H[K
+[C[?25l$([1m[36mfunction[0m[39;49m() {[8;3H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);
+	});[K
+alert([32m"nada!"[39;49m);[13;4H[K
+});
+[32m14 [39;49m[23;34H[7m3[0m[39;49m[27m[4;8H[?12l[?25h[?12;25h[2;15H[?25l[46m{[39;49m[4;4H}[?12l[?25h[?12;25h[2;15H[?25l{[4;5H[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25l[46m([39;49m)[?12l[?25h[?12;25h[?25l([C[?12l[?25h[?12;25h[24;1H[?25lNo matching parenthesis found[4;7H[?12l[?25h[?12;25h[?25l)[?12l[?25h[?12;25h[24;1H[K[4;8H[?25l;[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[H
+	[?12l[?25h[?12;25h[?25l[1@([?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;5H[?12l[?25h[?12;25h[C[?25lm));[?12l[?25h[?12;25h[?25l));[K[?12l[?25h[?12;25h[?25lo));[?12l[?25h[?12;25h[?25ly));[?12l[?25h[?12;25h[?25l));[K[?12l[?25h[?12;25h[?25l));[K[?12l[?25h[?12;25h[?25lp));[?12l[?25h[?12;25h[?25lu));[?12l[?25h[?12;25h[?25ll));	[?12l[?25h[?12;25h[?25ll));[?12l[?25h[?12;25h[?25lm));[?12l[?25h[?12;25h[?25le));[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;12H[?12l[?25h[?12;25h[24;1H[?25lBeginning of buffer[2;12H[?12l[?25h[?12;25h[24;1H[K[2;13H[C[C		[4;3H[K
+[C[?25l}(pullme));[7;3H[K
+[C$([1m[36mfunction[0m[39;49m() {[9;3H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);
+	});[K
+alert([32m"nada!"[39;49m);[14;4H[K
+});
+[32m15 [39;49m[23;34H[7m2[0m[39;49m[27m[3;8H[?12l[?25h[?12;25h[?25lp[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25lm[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[24;1H[?25lAuto-saving...[3;14H[?12l[?25h[?12;25h[24;15H[?25ldone[3;14H[?12l[?25h[?12;25h[24;1H[K[3;14H[?25l.[?12l[?25h[?12;25h[K[24;1H[?25lAuto-saving...[3;14H[?12l[?25h[?12;25h[24;15H[?25ldone[3;14H[?12l[?25h[?12;25h[24;1H[K[3;14H[24;1H[?25lSaving file /home/coder/pullme/client/app/js/main.js...[3;14H[?12l[?25h[?12;25h[24;1H[?25lWrote /home/coder/pullme/client/app/js/main.js[K[3;14H[?12l[?25h[?12;25h[23;6H[?25l[7m----F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L2    Git:[0m[39;49m[27m[3;14H[?12l[?25h[?12;25h[24;1H[K[3;14H[24;1H[?25l(No files need saving)[3;14H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs main.js [3Pcd main.js ls[K
+main.js  model.js
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs m
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[24d[?25l(New file)[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mm           [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[K[2d[24d[?25l(No files need saving)[H
+[?12l[?25h[?12;25h[24d[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs model.js 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m [1m[36mvar[0m[39;49m [33mpullme[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mpullme[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K
+[32m10 [39;49m        }[K
+[32m11 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+[A
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }[K
+[32m13 [39;49m        };[K
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {[K
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[32m19 [39;49m            [35mthis[39;49m.name = name;[K
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmodel.js    [0m[39;49m[27m[7m   Top L1     (Javascript) ----------------------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m10[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h
+[23;35H[?25l[7m2[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;34H[?25l[7m20[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[2;2H[?25l[32m1 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }
+[32m13 [39;49m        };[K
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[C[32m9 [39;49m            [35mthis[39;49m.name = name;
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = price;[K
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m2[39;49m
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m[2P
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m2[39;49m
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;[K
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[7m24% L21[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;34H[?25l[7m30[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[H
+[?25l[32m21 [39;49m            [35mthis[39;49m.category = category;[K
+[32m22 [39;49m            [35mthis[39;49m.price = price;
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25 [39;49m    })();[K
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;[K
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m
+[32m31 [39;49m            [35mthis[39;49m.name = name;[K
+[32m32 [39;49m            [35mthis[39;49m.address = address;[K
+[32m33 [39;49m            [35mthis[39;49m.phone = phon
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }[K
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();[K
+[32m38 [39;49m})(pullme || (pullme = {}));[K
+[K
+[K
+[K[23;29H[7mBot L31[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m29[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[?25l[32m10 [39;49m        }[K
+[32m11 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }
+[32m13 [39;49m        };
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[32m19[39;49m
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;
+[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = price;[K
+[32m23[39;49m
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25[39;49m
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[7m23% L20[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;34H[?25l[7m19[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[A[23;35H[?25l[7m0[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[1;22r[2;1H[9L[1;24r[2;1H[?25l[32m1 [39;49m [1m[36mvar[0m[39;49m [33mpullme[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mpullme[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K[23;29H[7mTop L9 [0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[24;1H[?25lBeginning of buffer[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25l(No files need saving)[2;4H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs model.js [Kls[Kemacs main.js 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m ([1m[36mfunction[0m[39;49m() {[K
+[32m2 [39;49m     pullme[K
+[32m3 [39;49m[K
+[32m4 [39;49m }(pullme));[K
+[32m5 [39;49m[K
+[32m6 [39;49m[K
+[32m7 [39;49m $([1m[36mfunction[0m[39;49m() {[K
+[32m8 [39;49m[K
+[32m9 [39;49m     $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m10 [39;49m        alert(data[0]);[K
+[32m11 [39;49m    });[K
+[32m12 [39;49m    alert([32m"nada!"[39;49m);[K
+[32m13 [39;49m[K
+[32m14 [39;49m});[K
+[32m15 [39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L1    Git:master  (Javascript) -----------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h	[?25lpullme[K[23;6H[7m**[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[3;6H[?25lpullme[K[3;4H[?12l[?25h[?12;25h[C[?25lpullme[K[3;4H[?12l[?25h[?12;25h[?25lpullme[K[3;4H[?12l[?25h[?12;25h[?25lullme[K[?12l[?25h[?12;25h[?25lllme[K[?12l[?25h[?12;25h[C[?25lme[K[?12l[?25h[?12;25h[?25lme[K[?12l[?25h[?12;25h[?25le[K[?12l[?25h[?12;25h[K[C[24;1H[?25lSaving file /home/coder/pullme/client/app/js/main.js...[3;4H[?12l[?25h[?12;25h[24;1H[?25lWrote /home/coder/pullme/client/app/js/main.js[K[3;4H[?12l[?25h[?12;25h[23;6H[?25l[7m--[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[24;1H[K[3;4H[24;1H[?25l(No files need saving)[3;4H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs main.js [1@odel.js 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m [1m[36mvar[0m[39;49m [33mpullme[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mpullme[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K
+[32m10 [39;49m        }[K
+[32m11 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+[A
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }[K
+[32m13 [39;49m        };[K
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {[K
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[32m19 [39;49m            [35mthis[39;49m.name = name;[K
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmodel.js    [0m[39;49m[27m[7m   Top L1     (Javascript) ----------------------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m10[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h
+[23;35H[?25l[7m2[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;34H[?25l[7m20[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[2;2H[?25l[32m1 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }
+[32m13 [39;49m        };[K
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[C[32m9 [39;49m            [35mthis[39;49m.name = name;
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = price;[K
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m2[39;49m
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m[2P
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m2[39;49m
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;[K
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[7m24% L21[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;34H[?25l[7m30[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[H
+[?25l[32m21 [39;49m            [35mthis[39;49m.category = category;[K
+[32m22 [39;49m            [35mthis[39;49m.price = price;
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25 [39;49m    })();[K
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;[K
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m
+[32m31 [39;49m            [35mthis[39;49m.name = name;[K
+[32m32 [39;49m            [35mthis[39;49m.address = address;[K
+[32m33 [39;49m            [35mthis[39;49m.phone = phon
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }[K
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();[K
+[32m38 [39;49m})(pullme || (pullme = {}));[K
+[K
+[K
+[K[23;29H[7mBot L31[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m29[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[?25l[32m10 [39;49m        }[K
+[32m11 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }
+[32m13 [39;49m        };
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[32m19[39;49m
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;
+[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = price;[K
+[32m23[39;49m
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25[39;49m
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[7m23% L20[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;34H[?25l[7m19[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[A[23;35H[?25l[7m0[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[1;22r[2;1H[9L[1;24r[2;1H[?25l[32m1 [39;49m [1m[36mvar[0m[39;49m [33mpullme[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mpullme[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K[23;29H[7mTop L9 [0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[24;1H[?25lBeginning of buffer[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[24;1H[?25lBeginning of buffer[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25l(No files need saving)[2;4H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ cd ts/ 
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ ls
+model.ts  model.ts~
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ emacs M model.ts
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools typescript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m [1m[36mmodule[0m[39;49m pullme {[K
+[32m2 [39;49m[K
+[32m3 [39;49m     [1m[36mclass[0m[39;49m User {[K
+[32m4 [39;49m         [1m[36mpublic[0m[39;49m vicinity: Array<Store>;[K
+[32m5 [39;49m         [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+[A
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m  name: [1m[36mstring[0m[39;49m,  [1m[36mpublic[0m[39;49m email: [1m[36mstring[0m[39;49m) {[K
+[32m6 [39;49m         }[K
+[32m7 [39;49m     }[K
+[32m8 [39;49m[K
+[32m9 [39;49m     [1m[36mclass[0m[39;49m Product {[K
+[32m10 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m isDiscoun\
+[A
+   t: boolean, [1m[36mpublic[0m[39;49m category: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m price: [1m[36mnumber[0m[39;49m) {[K
+[32m11 [39;49m        }[K
+[32m12 [39;49m    }[K
+[32m13 [39;49m[K
+[32m14 [39;49m    [1m[36mclass[0m[39;49m Store {[K
+[32m15 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+[A
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m address: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m phone: [1m[36mstring[0m[39;49m, [1m[36mpubli[0m[39;49m\
+[A
+   [1m[36mc[0m[39;49m products: Array<Product>) {[K
+[32m16 [39;49m        }[K
+[32m17 [39;49m    }[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmodel.ts    [0m[39;49m[27m[7m   Top L1     (typescript) ----------------------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[C[C[C	[?25l[1@p[23;6H[7m**[0m[39;49m[27m[4d[?12l[?25h[?12;25h[?25l[1@u[?12l[?25h[?12;25h[?25l[1@b[?12l[?25h[?12;25h[?25l[1@l[?12l[?25h[?12;25h[?25l[1@i[?12l[?25h[?12;25h[?25l[1m[36mpubli[0m[39;49m[1@[1m[36mc[0m[39;49m[?12l[?25h[?12;25h[C[C[23;34H[?25l[7m4[0m[39;49m[27m[5;15H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;14H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;12H[?12l[?25h[?12;25h[5;4H[23;34H[?25l[7m3[0m[39;49m[27m[4;26H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;26H[?12l[?25h[?12;25h[24;1H[?25lSaving file /home/coder/pullme/client/app/ts/model.ts...[5;12H[?12l[?25h[?12;25h[24;1H[?25lWrote /home/coder/pullme/client/app/ts/model.ts[K[5;12H[?12l[?25h[?12;25h[23;6H[?25l[7m--[0m[39;49m[27m[5;12H[?12l[?25h[?12;25h[24;1H[K[5;12H[24;1H[?25l(No files need saving)[5;12H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ cd js/ 
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ ls
+main.js  model.js
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ grunt build
+[4mRunning "clean:dist" (clean) task[24m
+[32m>> [39m8 paths cleaned.
+
+[4mRunning "ts:dev" (ts) task[24m
+[33mCompiling...[39m
+[36mCleared fast compile cache for target: dev[39m
+[36mFast compile will not work when --out is specified. Ignoring fast compilation[39m
+Using tsc v1.4.1
+/home/coder/pullme/client/app/ts/model.ts(3,4): error TS1044: 'public' modifier cannot appear on a module element.
+
+[31m>> [39m1 syntax error  
+[31m>> [39m[33mError: tsc return code: 1[39m
+[33mWarning: Task "ts:dev" failed. Use --force to continue.[39m
+
+[31mAborted due to warnings.[39m
+
+
+[4mExecution Time[24m[90m (2015-06-01 19:35:28 UTC)[39m
+loading tasks   [34m1.5s[39m  [34m▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 77%[39m
+clean:dist      [34m20ms[39m  [34m▇ 1%[39m
+ts:dev         [34m412ms[39m  [34m▇▇▇▇▇▇▇▇▇▇▇ 21%[39m
+[35mTotal 1.9s[39m
+
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ ts  cd ty s
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ ls
+model.ts  model.ts~
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ emacs model.ts
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools typescript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m [1m[36mmodule[0m[39;49m pullme {[K
+[32m2 [39;49m[K
+[32m3 [39;49m    [1m[36mpublic[0m[39;49m [1m[36mclass[0m[39;49m User {[K
+[32m4 [39;49m         [1m[36mpublic[0m[39;49m vicinity: Array<Store>;[K
+[32m5 [39;49m         [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+[A
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m  name: [1m[36mstring[0m[39;49m,  [1m[36mpublic[0m[39;49m email: [1m[36mstring[0m[39;49m) {[K
+[32m6 [39;49m         }[K
+[32m7 [39;49m     }[K
+[32m8 [39;49m[K
+[32m9 [39;49m     [1m[36mclass[0m[39;49m Product {[K
+[32m10 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m isDiscoun\
+[A
+   t: boolean, [1m[36mpublic[0m[39;49m category: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m price: [1m[36mnumber[0m[39;49m) {[K
+[32m11 [39;49m        }[K
+[32m12 [39;49m    }[K
+[32m13 [39;49m[K
+[32m14 [39;49m    [1m[36mclass[0m[39;49m Store {[K
+[32m15 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+[A
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m address: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m phone: [1m[36mstring[0m[39;49m, [1m[36mpubli[0m[39;49m\
+[A
+   [1m[36mc[0m[39;49m products: Array<Product>) {[K
+[32m16 [39;49m        }[K
+[32m17 [39;49m    }[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmodel.ts    [0m[39;49m[27m[7m   Top L1     (typescript) ----------------------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[C[C[C[?25lublic[1P[23;6H[7m**[0m[39;49m[27m[4;7H[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h	[24;1H[?25lAuto-saving...[4;8H[?12l[?25h[?12;25h[24;15H[?25ldone[4;8H[?12l[?25h[?12;25h[24;1H[K[4;8H[24;1H[?25lSaving file /home/coder/pullme/client/app/ts/model.ts...[4;8H[?12l[?25h[?12;25h[24;1H[?25lWrote /home/coder/pullme/client/app/ts/model.ts[K[4;8H[?12l[?25h[?12;25h[23;6H[?25l[7m--[0m[39;49m[27m[4d[?12l[?25h[?12;25h[24;1H[K[4;8H[24;1H[?25l(No files need saving)[4;8H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ cd js
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ ls
+main.js  model.js
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs model.js 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m [1m[36mvar[0m[39;49m [33mpullme[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mpullme[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K
+[32m10 [39;49m        }[K
+[32m11 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+[A
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }[K
+[32m13 [39;49m        };[K
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {[K
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[32m19 [39;49m            [35mthis[39;49m.name = name;[K
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmodel.js    [0m[39;49m[27m[7m   Top L1     (Javascript) ----------------------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m10[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h
+[23;35H[?25l[7m2[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;34H[?25l[7m20[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[2;2H[?25l[32m1 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }
+[32m13 [39;49m        };[K
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[C[32m9 [39;49m            [35mthis[39;49m.name = name;
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = price;[K
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m2[39;49m
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m[2P
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m2[39;49m
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;[K
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[7m24% L21[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[21;4H[?12l[?25h[?12;25h[23;34H[?25l[7m30[0m[39;49m[27m[22;4H[?12l[?25h[?12;25h[H
+[?25l[32m21 [39;49m            [35mthis[39;49m.category = category;[K
+[32m22 [39;49m            [35mthis[39;49m.price = price;
+[32m23 [39;49m        }[K
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25 [39;49m    })();[K
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;[K
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[32m30 [39;49m            [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m
+[32m31 [39;49m            [35mthis[39;49m.name = name;[K
+[32m32 [39;49m            [35mthis[39;49m.address = address;[K
+[32m33 [39;49m            [35mthis[39;49m.phone = phon
+[32m34 [39;49m            [35mthis[39;49m.products = products;
+[32m35 [39;49m        }[K
+[32m36 [39;49m        [1m[36mreturn[0m[39;49m Store;
+[32m37 [39;49m    })();[K
+[32m38 [39;49m})(pullme || (pullme = {}));[K
+[K
+[K
+[K[23;29H[7mBot L31[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m9[0m[39;49m[27m[20;4H[?12l[?25h[?12;25h
+
+
+
+[?25lEnd of buffer[20;4H[?12l[?25h[?12;25h
+
+
+
+[K[23;35H[?25l[7m8[0m[39;49m[27m[19;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[18;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[17;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[15;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m29[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[?25l[32m10 [39;49m        }[K
+[32m11 [39;49m        User.[35mprototype[39;49m.getStores = [1m[36mfunction[0m[39;49m ([33mmaxRange[39;49m, [33mproductName[39;49m, [33misDiscou[39;49m\
+   [33mnt[39;49m) {[K
+[32m12 [39;49m            [1m[36mif[0m[39;49m (isDiscount === [1m[36mvoid[0m[39;49m 0) { isDiscount = [35mtrue[39;49m; }
+[32m13 [39;49m        };
+[32m14 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m15 [39;49m    })();[K
+[32m16 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m17 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {
+[32m18 [39;49m            [35mthis[39;49m.id = id;[K
+[32m19[39;49m
+[32m20 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;
+[32m21 [39;49m            [35mthis[39;49m.category = category;
+[32m22 [39;49m            [35mthis[39;49m.price = price;[K
+[32m23[39;49m
+[32m24 [39;49m        [1m[36mreturn[0m[39;49m Product;
+[32m25[39;49m
+[32m26 [39;49m    [1m[36mvar[0m[39;49m [33mStore[39;49m = ([1m[36mfunction[0m[39;49m () {
+[32m27 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mStore[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33maddress[39;49m, [33mphone[39;49m, [33mproducts[39;49m) {
+[32m28 [39;49m            [35mthis[39;49m.id = id;
+[32m29 [39;49m            [35mthis[39;49m.lat = lat;
+[7m23% L20[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;34H[?25l[7m19[0m[39;49m[27m[12;4H[?12l[?25h[?12;25h[23;35H[?25l[7m8[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m7[0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[A[23;35H[?25l[7m0[0m[39;49m[27m[2;4H[?12l[?25h[?12;25h[1;22r[2;1H[9L[1;24r[2;1H[?25l[32m1 [39;49m [1m[36mvar[0m[39;49m [33mpullme[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mpullme[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K[23;29H[7mTop L9 [0m[39;49m[27m[10;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;4H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[24;1H[?25l(No files need saving)[5;4H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs model.js ls[K[3@cd js..emacs model.tsls[K[3@cd ts..grunt buildls[K[3@cd js..emacs model.ts       ain.js 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m ([1m[36mfunction[0m[39;49m() {[K
+[32m2 [39;49m[K
+[32m3 [39;49m[K
+[32m4 [39;49m }(pullme));[K
+[32m5 [39;49m[K
+[32m6 [39;49m[K
+[32m7 [39;49m $([1m[36mfunction[0m[39;49m() {[K
+[32m8 [39;49m[K
+[32m9 [39;49m     $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m10 [39;49m        alert(data[0]);[K
+[32m11 [39;49m    });[K
+[32m12 [39;49m    alert([32m"nada!"[39;49m);[K
+[32m13 [39;49m[K
+[32m14 [39;49m});[K
+[32m15 [39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L1    Git:master  (Javascript) -----------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25l(No files need saving)[2;4H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ ls
+main.js  model.js
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ ls
+[0m[01;34mbower_components[0m  [01;34mimages[0m      [01;34mjs[0m          [01;34mscripts[0m  [01;34mts[0m
+favicon.ico       index.html  robots.txt  [01;34mstyles[0m   typescript
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ cd ts
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ ls
+model.ts  model.ts~
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ emacs model.ts
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools typescript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m [1m[36mmodule[0m[39;49m pullme {[K
+[32m2 [39;49m[K
+[32m3 [39;49m     [1m[36mclass[0m[39;49m User {[K
+[32m4 [39;49m         [1m[36mpublic[0m[39;49m vicinity: Array<Store>;[K
+[32m5 [39;49m         [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+[A
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m  name: [1m[36mstring[0m[39;49m,  [1m[36mpublic[0m[39;49m email: [1m[36mstring[0m[39;49m) {[K
+[32m6 [39;49m         }[K
+[32m7 [39;49m     }[K
+[32m8 [39;49m[K
+[32m9 [39;49m     [1m[36mclass[0m[39;49m Product {[K
+[32m10 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m isDiscoun\
+[A
+   t: boolean, [1m[36mpublic[0m[39;49m category: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m price: [1m[36mnumber[0m[39;49m) {[K
+[32m11 [39;49m        }[K
+[32m12 [39;49m    }[K
+[32m13 [39;49m[K
+[32m14 [39;49m    [1m[36mclass[0m[39;49m Store {[K
+[32m15 [39;49m        [1m[36mconstructor[0m[39;49m([1m[36mpublic[0m[39;49m id: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m lat: [1m[36mnumber[0m[39;49m, [1m[36mpublic[0m[39;49m long: [1m[36mnumb[0m[39;49m\
+[A
+   [1m[36mer[0m[39;49m, [1m[36mpublic[0m[39;49m name: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m address: [1m[36mstring[0m[39;49m, [1m[36mpublic[0m[39;49m phone: [1m[36mstring[0m[39;49m, [1m[36mpubli[0m[39;49m\
+[A
+   [1m[36mc[0m[39;49m products: Array<Product>) {[K
+[32m16 [39;49m        }[K
+[32m17 [39;49m    }[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmodel.ts    [0m[39;49m[27m[7m   Top L1     (typescript) ----------------------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[C[C[C[?25l[1@e[23;6H[7m**[0m[39;49m[27m[4d[?12l[?25h[?12;25h[?25l[1@x[?12l[?25h[?12;25h[?25l[1@p[?12l[?25h[?12;25h[?25l[1@o[?12l[?25h[?12;25h[?25l[1@r[?12l[?25h[?12;25h[?25l[1m[36mexpor[0m[39;49m[1@[1m[36mt[0m[39;49m[?12l[?25h[?12;25h[24;1H[?25lSaving file /home/coder/pullme/client/app/ts/model.ts...[4;13H[?12l[?25h[?12;25h[24;1H[?25lWrote /home/coder/pullme/client/app/ts/model.ts[K[4;13H[?12l[?25h[?12;25h[23;6H[?25l[7m--[0m[39;49m[27m[4;13H[?12l[?25h[?12;25h[24;1H[K[4;13H[24;1H[?25l(No files need saving)[4;13H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ emacs model.tsls[K[3@cd ts[3Plscd ..[3Plsemacs main.js [1@odel.js ls[K[3@cd js..emacs model.tsls[K[3@cd ts..grunt buildls[Kgrunt build
+[4mRunning "clean:dist" (clean) task[24m
+[32m>> [39m0 paths cleaned.
+
+[4mRunning "ts:dev" (ts) task[24m
+[33mCompiling...[39m
+[36mFast compile will not work when --out is specified. Ignoring fast compilation[39m
+Using tsc v1.4.1
+
+
+
+[32mTypeScript compilation complete: 1.09s for 1 typescript files[39m
+
+[4mRunning "wiredep:app" (wiredep) task[24m
+
+[4mRunning "useminPrepare:html" (useminPrepare) task[24m
+Configuration changed for [36mconcat[39m, [36muglify[39m, [36mcssmin[39m
+
+[4mRunning "concurrent:dist" (concurrent) task[24m
+[32m>> [39mWarning: There are more tasks than your concurrency limit. After this limit[32m
+>> [39mis reached no further tasks will be run until the current tasks are[32m
+>> [39mcompleted. You can adjust the limit in the concurrent task options
+    
+    [4mRunning "copy:styles" (copy) task[24m
+    Copied [36m1[39m files
+    
+    [32mDone, without errors.[39m
+    
+    
+    Execution Time (2015-06-01 19:45:47 UTC)
+    loading tasks  1.6s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 99%
+    Total 1.6s
+        
+    [4mRunning "imagemin:dist" (imagemin) task[24m
+    Minified 0 images (saved 0 B)
+    
+    [32mDone, without errors.[39m
+    
+    
+    Execution Time (2015-06-01 19:45:47 UTC)
+    loading tasks  1.6s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 99%
+    Total 1.6s
+        
+    [4mRunning "svgmin:dist" (svgmin) task[24m
+    Total saved: 0 B
+    
+    [32mDone, without errors.[39m
+    
+    
+    Execution Time (2015-06-01 19:45:49 UTC)
+    loading tasks  1.5s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 97%
+    svgmin:dist    46ms  ▇▇ 3%
+    Total 1.5s
+    
+[4mRunning "autoprefixer:dist" (autoprefixer) task[24m
+File [36m.tmp/styles/main.css[39m created.
+
+[4mRunning "concat:dist" (concat) task[24m
+File [36mapp/scripts/app.js[39m created.
+
+[4mRunning "concat:generated" (concat) task[24m
+File [36m.tmp/concat/styles/vendor.css[39m created.
+File [36m.tmp/concat/styles/main.css[39m created.
+File [36m.tmp/concat/scripts/vendor.js[39m created.
+File [36m.tmp/concat/scripts/plugins.js[39m created.
+File [36m.tmp/concat/scripts/main.js[39m created.
+
+[4mRunning "cssmin:generated" (cssmin) task[24m
+File [36mdist/styles/vendor.css[39m created: [32m132.55 kB[39m → [32m108.57 kB[39m
+File [36mdist/styles/main.css[39m created: [32m1.45 kB[39m → [32m735 B[39m
+
+[4mRunning "uglify:generated" (uglify) task[24m
+
+[4mRunning "copy:dist" (copy) task[24m
+Copied [36m8[39m files
+
+[4mRunning "rev:dist" (rev) task[24m
+dist/scripts/main.js [32m>> [39m220cda1f.main.js
+dist/scripts/plugins.js [32m>> [39mcb7562c6.plugins.js
+dist/scripts/vendor.js [32m>> [39me0099dcf.vendor.js
+dist/styles/main.css [32m>> [39ma5896f90.main.css
+dist/styles/vendor.css [32m>> [39m9c307a9d.vendor.css
+dist/favicon.ico [32m>> [39m6df2b309.favicon.ico
+
+[4mRunning "usemin:html" (usemin) task[24m
+Replaced [36m1[39m reference to assets
+
+[4mRunning "usemin:css" (usemin) task[24m
+Replaced [36m2[39m references to assets
+
+[4mRunning "htmlmin:dist" (htmlmin) task[24m
+Minified [36mdist/index.html[39m 2.48 kB → 2.11 kB
+
+[32mDone, without errors.[39m
+
+
+[4mExecution Time[24m[90m (2015-06-01 19:45:43 UTC)[39m
+loading tasks      [34m1.5s[39m  [34m▇▇▇▇▇▇ 13%[39m
+ts:dev             [34m1.1s[39m  [34m▇▇▇▇▇ 10%[39m
+wiredep:app       [34m174ms[39m  [34m▇ 2%[39m
+concurrent:dist    [34m3.9s[39m  [34m▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 34%[39m
+cssmin:generated  [34m199ms[39m  [34m▇ 2%[39m
+uglify:generated   [34m4.2s[39m  [34m▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 37%[39m
+[35mTotal 11.2s[39m
+
+]0;coder@4ef8a728f653: ~/pullme/client/app/tscoder@4ef8a728f653:~/pullme/client/app/ts$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ ls
+[0m[01;34mbower_components[0m  [01;34mimages[0m      [01;34mjs[0m          [01;34mscripts[0m  [01;34mts[0m
+favicon.ico       index.html  robots.txt  [01;34mstyles[0m   typescript
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ cd js
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ ls
+main.js  model.js
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+Welcome to GNU Emacs, one component of the GNU/Linux operating system.[K
+[K
+Get help           C-h  (Hold down CTRL and press h)[K
+[4m[34mEmacs manual[0m[39;49m       C-h r        [4m[34mBrowse manuals[0m[39;49m     C-h i[K
+[4m[34mEmacs tutorial[0m[39;49m     C-h t        Undo changes       C-x u[K
+[4m[34mBuy manuals[0m[39;49m        C-h RET      Exit Emacs         C-x C-c[K
+[4m[34mActivate menubar[0m[39;49m   M-`[K
+(`C-' means use the CTRL key.  `M-' means use the Meta (or Alt) key.[K
+If you have no Meta key, you may instead type ESC followed by the character.)[K
+Useful tasks:[K
+[4m[34mVisit New File[0m[39;49m                  [4m[34mOpen Home Directory[0m[39;49m[K
+[4m[34mCustomize Startup[0m[39;49m               [4m[34mOpen *scratch* buffer[0m[39;49m[K
+[K
+GNU Emacs 24.4.1 (x86_64-pc-linux-gnu)[K
+ of 2015-03-07 on trouble, modified by Debian[K
+Copyright (C) 2014 Free Software Foundation, Inc.[K
+[K
+GNU Emacs comes with ABSOLUTELY NO WARRANTY; type C-h C-w for [4m[34mfull details[0m[39;49m.[K
+Emacs is Free Software--Free as in Freedom--so you can redistribute copies[K
+of Emacs and modify it; type C-h C-c to see [4m[34mthe conditions[0m[39;49m.[K
+Type C-h C-o for information on [4m[34mgetting the latest version[0m[39;49m.[K
+[7m-=--:%%--F1  [0m[39;49m[27m[7m[1m*GNU Emacs* [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[K[2d[24d[?25l(No files need saving)[H
+[?12l[?25h[?12;25h[24d[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs model.js 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m [1m[36mvar[0m[39;49m [33mpullme[39;49m;[K
+[32m2 [39;49m ([1m[36mfunction[0m[39;49m ([33mpullme[39;49m) {[K
+[32m3 [39;49m     [1m[36mvar[0m[39;49m [33mUser[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m4 [39;49m         [1m[36mfunction[0m[39;49m [1m[34mUser[0m[39;49m([33mid[39;49m, [33mlat[39;49m, [32mlong[39;49m, [33mname[39;49m, [33memail[39;49m) {[K
+[32m5 [39;49m             [35mthis[39;49m.id = id;[K
+[32m6 [39;49m             [35mthis[39;49m.lat = lat;[K
+[32m7 [39;49m             [35mthis[39;49m.[32mlong[39;49m = [32mlong[39;49m;[K
+[32m8 [39;49m             [35mthis[39;49m.name = name;[K
+[32m9 [39;49m             [35mthis[39;49m.email = email;[K
+[32m10 [39;49m        }[K
+[32m11 [39;49m        [1m[36mreturn[0m[39;49m User;[K
+[32m12 [39;49m    })();[K
+[32m13 [39;49m    pullme.User = User;[K
+[32m14 [39;49m    [1m[36mvar[0m[39;49m [33mProduct[39;49m = ([1m[36mfunction[0m[39;49m () {[K
+[32m15 [39;49m        [1m[36mfunction[0m[39;49m [1m[34mProduct[0m[39;49m([33mid[39;49m, [33mname[39;49m, [33misDiscount[39;49m, [33mcategory[39;49m, [33mprice[39;49m) {[K
+[32m16 [39;49m            [35mthis[39;49m.id = id;[K
+[32m17 [39;49m            [35mthis[39;49m.name = name;[K
+[32m18 [39;49m            [35mthis[39;49m.isDiscount = isDiscount;[K
+[32m19 [39;49m            [35mthis[39;49m.category = category;[K
+[32m20 [39;49m            [35mthis[39;49m.price = price;[K
+[32m21 [39;49m        }[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmodel.js    [0m[39;49m[27m[7m   Top L1     (Javascript) ----------------------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[2;4H[24;1H[?25l(No files need saving)[2;4H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ emacs main.js 
+[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25lLoading 00debian-vars...done[K[H
+[?12l[?25h[?12;25h[24;9H[?25l/home/coder/.emacs.d/lisp/TypeScript.el (source)...[H
+[?12l[?25h[?12;25h[24d[?25l3); use either `cl-flet' or `cl-letf'.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental) ---------------------------[0m[39;49m[27m
+[A
+../../../../.emacs.d/lisp/TypeScript.el: `flet' is an obsolete macro (as of 24.\
+[A[2d[?12l[?25h[?12;25h[24d[?25l4.3); use `cl-labels' instead.[K[23;43Hlabels' is an obsolete macro (as of 2[H
+[?12l[?25h[?12;25h[24d[K[A[?25lLoading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction) ----------------------[0m[39;49m[27m
+[A
+Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m ([1m[36mfunction[0m[39;49m() {[K
+[32m2 [39;49m[K
+[32m3 [39;49m[K
+[32m4 [39;49m }(pullme));[K
+[32m5 [39;49m[K
+[32m6 [39;49m[K
+[32m7 [39;49m $([1m[36mfunction[0m[39;49m() {[K
+[32m8 [39;49m[K
+[32m9 [39;49m     $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m10 [39;49m        alert(data[0]);[K
+[32m11 [39;49m    });[K
+[32m12 [39;49m    alert([32m"nada!"[39;49m);[K
+[32m13 [39;49m[K
+[32m14 [39;49m});[K
+[32m15 [39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L1    Git:master  (Javascript) -----------------[0m[39;49m[27m
+[A[2;4H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m2[0m[39;49m[27m[3;4H[?12l[?25h[?12;25h[23;6H[?25l[7m**[0m[39;49m[27m[3d[?12l[?25h[?12;25h[?25lp[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25lm[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lU[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lp[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25ly[?12l[?25h[?12;25h[?25lp[?12l[?25h[?12;25h[?25l0[?12l[?25h[?12;25h[K[3;20H[?25l[35mprototype[39;49m[?12l[?25h[?12;25h[C[?25l=[?12l[?25h[?12;25h	[?25lf[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[3;32H[?25l[1m[36mfunction[0m[39;49m[?12l[?25h[?12;25h	[?25l([?12l[?25h[?12;25h[?25l[46m([39;49m)[?12l[?25h[?12;25h[?25l([C[C[?12l[?25h[?12;25h[?25l{[?12l[?25h[?12;25h[5;3H[K
+[C[?25l}(pullme));[8;3H[K
+[C$([1m[36mfunction[0m[39;49m() {[10;3H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);
+	});[K
+alert([32m"nada!"[39;49m);[15;4H[K
+});
+[32m16 [39;49m[23;34H[7m3[0m[39;49m[27m[4;12H[?12l[?25h[?12;25h[3;43H[?25l[46m{[39;49m
+	}[?12l[?25h[?12;25h[3;43H[?25l{
+	[?12l[?25h[?12;25h[23;34H[?25l[7m2[0m[39;49m[27m[3;8H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;8H[?12l[?25h[?12;25h[K
+	[?25l}[6;3H[K
+[C}(pullme));[9;3H[K
+[C$([1m[36mfunction[0m[39;49m() {[11;4H[K
+	$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);
+	});[K
+alert([32m"nada!"[39;49m);[16;4H[K
+});
+[32m17 [39;49m[23;34H[7m4[0m[39;49m[27m[5;8H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;4H[?12l[?25h[?12;25h[C[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[4;12H[23;34H[?25l[7m2[0m[39;49m[27m[3;12H[?12l[?25h[?12;25h[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C	[?25l () {[?12l[?25h[?12;25h[?25lg() {[?12l[?25h[?12;25h[?25le() {[?12l[?25h[?12;25h[?25lt() {[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;12H[?12l[?25h[?12;25h[24;1H[?25lAuto-saving...[4;12H[?12l[?25h[?12;25h[24;15H[?25ldone[4;12H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m4[0m[39;49m[27m[5;9H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;15H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9[0m[39;49m[27m[10;18H[?12l[?25h[?12;25h[23;34H[?25l[7m10[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;44H[?12l[?25h[?12;25h[24;1H[?25lMark set[12;8H[?12l[?25h[?12;25h[24;1H[K[12;8H[?25l[37m[44m$.getJSON("http://pullme.pe.hu/slim/", [39;49m[1m[37m[44mfunction[0m[39;49m[37m[44m([39;49m[37m[44mdata[39;49m[37m[44m) {                  [39;49m
+[23;35H[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[?25l[37m[44m        alert(data[0]);                                                      [39;49m
+[14;4H[37m[44m    [39;49m[23;35H[7m3[0m[39;49m[27m[14;8H[?12l[?25h[?12;25h[?25l[37m[44m});                                                                      [39;49m
+[15;4H[37m[44m    [39;49m[23;35H[7m4[0m[39;49m[27m[15;8H[?12l[?25h[?12;25h[?25l[37m[44malert("nada!");                                                          [39;49m
+[16;4H[37m[44m    [39;49m[23;35H[7m5[0m[39;49m[27m[16;8H[?12l[?25h[?12;25h[K[K[K[K[15;23H[K[23;35H[?25l[7m4[0m[39;49m[27m[15;23H[?12l[?25h[?12;25h[12;8H[?25l$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K[13;4H        alert(data[0]);[K[14;4H    });[K[15;4H    alert([32m"nada!"[39;49m);[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;11H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;23H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;23H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9 [0m[39;49m[27m[10;18H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;15H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;9H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;12H[?12l[?25h[?12;25h[24;1H[K[H[?25l[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m([1m[36mfunction[0m[39;49m() {[K
+[32m2 [39;49m    pullme.User.[35mprototype[39;49m = [1m[36mfunction[0m[39;49m get() {[K
+[32m3 [39;49m        $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m4 [39;49m        alert(data[0]);[K
+[32m5 [39;49m    });[K
+[32m6 [39;49m    alert([32m"nada!"[39;49m);[K
+[32m7 [39;49m[K
+[32m8 [39;49m});[K
+[32m9 [39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-=--:**--F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L3    Git:master  (Javascript) -----------------[0m[39;49m[27m
+[A[4;11H[?12l[?25h[?12;25h[4;3H[23;34H[?25l[7m2[0m[39;49m[27m[3;47H[?12l[?25h[?12;25h[24;1H[?25lAuto-saving...[3;14H[?12l[?25h[?12;25h[24;15H[?25ldone[3;14H[?12l[?25h[?12;25h[24;1H[K[3;13H[24;1H[?25lUndo![3d[?12l[?25h[?12;25h[24;1H[?25lUndo![K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m ([1m[36mfunction[0m[39;49m() {[K
+[32m2 [39;49m     pullme.User.[35mprototype[39;49m = [1m[36mfunction[0m[39;49m get() {[K
+[32m3 [39;49m[K
+[32m4 [39;49m     }[K
+[32m5 [39;49m[K
+[32m6 [39;49m }(pullme));[K
+[32m7 [39;49m[K
+[32m8 [39;49m[K
+[32m9 [39;49m $([1m[36mfunction[0m[39;49m() {[K
+[32m10 [39;49m[K
+[32m11 [39;49m    $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m12 [39;49m        alert(data[0]);[K
+[32m13 [39;49m    });[K
+[32m14 [39;49m    alert([32m"nada!"[39;49m);[K
+[32m15 [39;49m[K
+[32m16 [39;49m});[K
+[32m17 [39;49m[K
+[K
+[K
+[K
+[K
+[7m-=--:**--F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L3    Git:master  (Javascript) -----------------[0m[39;49m[27m
+[A[4;12H[?12l[?25h[?12;25h[24;1H[K[23;34H[?25l[7m4[0m[39;49m[27m[5;9H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;12H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9[0m[39;49m[27m[10;12H[?12l[?25h[?12;25h[23;34H[?25l[7m10[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9 [0m[39;49m[27m[10;12H[?12l[?25h[?12;25h[?25l[32m/$(function() {                                                              [39;49m
+[11;4H[32m                                                                             [39;49m
+[10;5H[?12l[?25h[?12;25h[?25l[31m//$(function() {                                                             [39;49m
+[11;4H[K[10;6H[?12l[?25h[?12;25h[23;34H[?25l[7m10[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;6H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;6H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[15;6H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[16;6H[?12l[?25h[?12;25h[23;35H[?25l[7m6[0m[39;49m[27m[17;6H[?12l[?25h[?12;25h[?25l[32m/});                                                                         [39;49m
+[18;4H[32m                                                                             [39;49m
+[17;5H[?12l[?25h[?12;25h[?25l[31m//});                                                                        [39;49m
+[18;4H[K[17;6H[?12l[?25h[?12;25h[23;35H[?25l[7m5[0m[39;49m[27m[16;6H[?12l[?25h[?12;25h[23;35H[?25l[7m4[0m[39;49m[27m[15;6H[?12l[?25h[?12;25h[23;35H[?25l[7m3[0m[39;49m[27m[14;6H[?12l[?25h[?12;25h[23;35H[?25l[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[23;35H[?25l[7m1[0m[39;49m[27m[12;6H[?12l[?25h[?12;25h[C	[24;1H[?25lMark activated[12;8H[?12l[?25h[?12;25h[24;1H[K[12;8H[?25l[37m[44m$.getJSON("http://pullme.pe.hu/slim/", [39;49m[1m[37m[44mfunction[0m[39;49m[37m[44m([39;49m[37m[44mdata[39;49m[37m[44m) {                  [39;49m
+[23;35H[7m2[0m[39;49m[27m[13;4H[?12l[?25h[?12;25h[?25l[37m[44m        alert(data[0]);                                                      [39;49m
+[14;4H[37m[44m    [39;49m[23;35H[7m3[0m[39;49m[27m[14;8H[?12l[?25h[?12;25h[?25l[37m[44m});                                                                      [39;49m
+[15;4H[37m[44m    [39;49m[23;35H[7m4[0m[39;49m[27m[15;8H[?12l[?25h[?12;25h[?25l[37m[44malert("nada!");                                                          [39;49m
+[16;4H[37m[44m    [39;49m[23;35H[7m5[0m[39;49m[27m[16;8H[?12l[?25h[?12;25h[A[?25lalert([32m"nada!"[39;49m);[K[16;4H[K[23;35H[7m4[0m[39;49m[27m[15;8H[?12l[?25h[?12;25h[?25l[37m[44ma[39;49m[?12l[?25h[?12;25h[?25l[37m[44ml[39;49m[?12l[?25h[?12;25h[?25l[37m[44me[39;49m[?12l[?25h[?12;25h[?25l[37m[44mr[39;49m[?12l[?25h[?12;25h[?25l[37m[44mt[39;49m[?12l[?25h[?12;25h[?25l[37m[44m([39;49m[?12l[?25h[?12;25h[?25l[37m[44m"[39;49m[?12l[?25h[?12;25h[?25l[37m[44mn[39;49m[?12l[?25h[?12;25h[?25l[37m[44ma[39;49m[?12l[?25h[?12;25h[?25l[37m[44md[39;49m[?12l[?25h[?12;25h[?25l[37m[44ma[39;49m[?12l[?25h[?12;25h[?25l[37m[44m![39;49m[?12l[?25h[?12;25h[?25l[37m[44m"[39;49m[?12l[?25h[?12;25h[?25l[37m[44m)[39;49m[?12l[?25h[?12;25h[?25l[37m[44m;[39;49m[?12l[?25h[?12;25h[?25l[37m[44m                                                          [39;49m
+[23;35H[7m5[0m[39;49m[27m[16;4H[?12l[?25h[?12;25h[15;23H[K[23;35H[?25l[7m4[0m[39;49m[27m[15;23H[?12l[?25h[?12;25h[12;4H[K
+[K
+[?25l[31m//});                                                                        [39;49m
+[15;4H[K
+[K
+[K
+[K[23;35H[7m1[0m[39;49m[27m[12;8H[?12l[?25h[?12;25h[23;35H[?25l[7m0[0m[39;49m[27m[11;4H[?12l[?25h[?12;25h[23;34H[?25l[7m9 [0m[39;49m[27m[10;8H[?12l[?25h[?12;25h[23;34H[?25l[7m8[0m[39;49m[27m[9;4H[?12l[?25h[?12;25h[23;34H[?25l[7m7[0m[39;49m[27m[8;4H[?12l[?25h[?12;25h[23;34H[?25l[7m6[0m[39;49m[27m[7;8H[?12l[?25h[?12;25h[23;34H[?25l[7m5[0m[39;49m[27m[6;4H[?12l[?25h[?12;25h[23;34H[?25l[7m4[0m[39;49m[27m[5;8H[?12l[?25h[?12;25h[23;34H[?25l[7m3[0m[39;49m[27m[4;4H[?12l[?25h[?12;25h[4;12H[24;1H[?25lMark set[4;12H[?12l[?25h[?12;25h[?25l$.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {
+	    alert(data[0]);
+	});[7;4H    alert([32m"nada!"[39;49m);
+	}[10;4H}(pullme));[K[13;4H[31m//$(function() {                                                             [39;49m
+[14;4H[K
+
+[32m15 [39;49m
+[32m16 [39;49m[31m//});                                                                        [39;49m
+[32m17 [39;49m[23;34H[7m6[0m[39;49m[27m[7;23H[?12l[?25h[?12;25h[24;1H[?25lAuto-saving...[7;23H[?12l[?25h[?12;25h[24;1H[?25lMark set[K[7;23H[?12l[?25h[?12;25h[24;1H[K[7;23H[24;1H[?25l[34m-h) [39;49m[K[H[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m ([1m[36mfunction[0m[39;49m() {[K
+[32m2 [39;49m     pullme.User.[35mprototype[39;49m = [1m[36mfunction[0m[39;49m get() {[K
+[32m3 [39;49m         $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m4 [39;49m         alert(data[0]);[K
+[32m5 [39;49m     });[K
+[32m6 [39;49m     alert([32m"nada!"[39;49m);[K
+[32m7 [39;49m     }[K
+[32m8 [39;49m[K
+[32m9 [39;49m }(pullme));[K
+[32m10 [39;49m[K
+[32m11 [39;49m[K
+[32m12 [39;49m[31m//$(function() {                                                             [39;49m
+[A
+[32m13 [39;49m[K
+[32m14 [39;49m[K
+[32m15 [39;49m[K
+[32m16 [39;49m[31m//});                                                                        [39;49m
+[A
+[32m17 [39;49m[K
+[K
+[K
+[K
+[7m-=--:**--F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L6    Git:master  (Javascript) -----------------[0m[39;49m[27m
+[A
+[34mSave file /home/coder/pullme/client/app/js/main.js? (y, n, !, ., q, C-r, d or C[39;49m\
+[A[24;5H[?12l[?25h[?12;25h[?25l-h) y[ASave file /home/coder/pullme/client/app/js/main.js? (y, n, !, ., q, C-r, d or C[24;6H[?12l[?25h[?12;25h[K[23;4H[?25ling file /home/coder/pullme/client/app/js/main.js...[K[7;23H[?12l[?25h[?12;25h[23;1H[?25lWrote /home/coder/pullme/client/app/js/main.js[K[7;23H[?12l[?25h[?12;25h[24;1H[K[H[?25l[7mFile Edit Options Buffers Tools Javascript Help                                 [0m[39;49m[27m
+[A
+[32m1 [39;49m ([1m[36mfunction[0m[39;49m() {[K
+[32m2 [39;49m     pullme.User.[35mprototype[39;49m = [1m[36mfunction[0m[39;49m get() {[K
+[32m3 [39;49m         $.getJSON([32m"http://pullme.pe.hu/slim/"[39;49m, [1m[36mfunction[0m[39;49m([33mdata[39;49m) {[K
+[32m4 [39;49m         alert(data[0]);[K
+[32m5 [39;49m     });[K
+[32m6 [39;49m     alert([32m"nada!"[39;49m);[K
+[32m7 [39;49m     }[K
+[32m8 [39;49m[K
+[32m9 [39;49m }(pullme));[K
+[32m10 [39;49m[K
+[32m11 [39;49m[K
+[32m12 [39;49m[31m//$(function() {                                                             [39;49m
+[A
+[32m13 [39;49m[K
+[32m14 [39;49m[K
+[32m15 [39;49m[K
+[32m16 [39;49m[31m//});                                                                        [39;49m
+[A
+[32m17 [39;49m[K
+[K
+[K
+[K
+[K
+[7m-=--:----F1  [0m[39;49m[27m[7m[1mmain.js     [0m[39;49m[27m[7m   All L6    Git:master  (Javascript) -----------------[0m[39;49m[27m
+[A[7;23H[?12l[?25h[?12;25h[24;1H[K[?1l>[?12l[?25h[?1049l[39;49m]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ git add .
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ git commit -m "model.ts"
+[master cb269d5] model.ts
+ 3 files changed, 16 insertions(+), 23 deletions(-)
+ delete mode 100644 client/app/js/main.js~
+ rename client/app/js/{app.js => model.js} (82%)
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ git push -u origin mastr er
+^C
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ export HTTP_PROXY=http://correiosnet\ 82038198:Ingodwetrust_1@proxyac.correiosnet.int:80
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ [Kexport HTTPS_PROXY=http://correiosnet \82038198:Ingodwetrust_1@proxyac.correiosnet.int:80
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ [Kexport http_proxy=http://correiosnet\ 82038198:Ingodwetrust_1@proxyac.correiosnet.int:80
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ [Kexport https_proxy=http://correiosnet \82038198:Ingodwetrust_1@proxyac.correiosnet.int:80
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ [K
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ export no_proxy="localhost,127.0.0.1" [A
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ [Kexport no_proxy="localhost,127.0.0.1" [Acoder@4ef8a728f653:~/pullme/client/app/js$ export https_proxy=http://correiosnet\\82038198:Ingodwetrust_1@proxyac.correiosnet.int:80[Attp_proxy=http://correiosnet\8[1P2038198:Ingodwetrust_1@proxyac.correiosnet.int:80[AHTTPS_PROXY=http://correiosnet\[1@82038198:Ingodwetrust_1@proxyac.correiosnet.int:80[ATTP_PROXY=http://correiosnet\8[1P2038198:Ingodwetrust_1@proxyac.correiosnet.int:80[A[12Pgit push -u origin master
+[K[Acoder@4ef8a728f653:~/pullme/client/app/js$ git push -u origin master
+Username for 'https://github.com': albraga
+Password for 'https://albraga@github.com': 
+Counting objects: 7, done.
+Delta compr

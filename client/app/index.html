@@ -33,7 +33,7 @@
       </div>
 
       <div class="jumbotron">
-        <h1>'Ok, 'Ok!</h1>
+        <h1></h1>
         <p class="lead">Always a pleasure scaffolding your apps.</p>
         <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
       </div>
@@ -61,7 +61,6 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script data-main="main" src="scripts/require.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
@@ -76,7 +75,8 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <!-- build:js(.) scripts/plugins.js -->
+    <!-- build:js(.) scripts/plugins.js -->
+     <script src="bower_components/restful.js/dist/restful.min.js"></script>
         <script src="bower_components/bootstrap/js/affix.js"></script>
         <script src="bower_components/bootstrap/js/alert.js"></script>
         <script src="bower_components/bootstrap/js/dropdown.js"></script>
@@ -92,7 +92,7 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
+        <script src="scripts/app.js"></script>
         <!-- endbuild -->
 </body>
 </html>
