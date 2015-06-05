@@ -1,6 +1,6 @@
 module model {
 	export class User {
-            constructor(public id?: number, public lat?: number, public long?: number, public  name?: string,  public email?: string){}
+            constructor(public id?: number, public lat?: number, public longi?: number, public  name?: string,  public email?: string){}
 	}
 
 	export class Product {
@@ -8,6 +8,6 @@ module model {
 	}
 
 	export class Store {
-	    constructor(public id?: number, public lat?: number, public long?: number, public name?: string, public address?: string, public phone?: string, public products?: Array<Product>) {}
+	    constructor(public id?: number, public lat?: number, public longi?: number, public name?: string, public address?: string, public phone?: string, public products?: Array<Product>) {}
 	}
 }

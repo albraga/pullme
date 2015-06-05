@@ -1,10 +1,52 @@
 var pullme = (function($) {
+
+    var lat;
+    var longi;
+    var map;
+    
+    var getLocation = function () {
+	if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(setPosition);
+	}
+    };
+
+    var setPosition = function (position) {
+	longi = position.coords.longitude;
+	lat = position.coords.latitude;
+	createMap();
+    };
+
+    var initMap = function() {
+	var mapOptions = {
+	    zoom: 2,
+	    center: new google.maps.LatLng(lat, longi)
+	};
+	map = new google.maps.Map(document.getElementById('main'), mapOptions);
+    }
+
+    var startMap = function () {
+	google.maps.event.addDomListener(window, 'load', initMap());
+    }
+    
+    var app = {
+	initialize: function () {
+	    document.addEventListener('deviceready', this.onDeviceReady, false);
+	    this.onDeviceReady(); //uncomment for testing in Chrome browser
+	},
+	onDeviceReady: function () {
+	    getLocation();
+	    startMap();
+	}
+    };
+    
+    app.initialize();
+
     var ctr = {};
     ctr.get = $.getJSON("http://pullme.pe.hu/slim/", function(data) {	
-	var user = new model.User(1, 0.2, 0.4, data[0], data[1]);
-	alert(user.email);
+	var user = new model.User(1, lat, longi, data[0], data[1]);
+	alert(user.longi);
     });
-
+    
     return ctr;
     
 })(jQuery);
