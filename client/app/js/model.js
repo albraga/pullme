@@ -1,5 +1,5 @@
-var pullme;
-(function (pullme) {
+var model;
+(function (model) {
     var User = (function () {
         function User(id, lat, long, name, email) {
             this.id = id;
@@ -10,7 +10,7 @@ var pullme;
         }
         return User;
     })();
-    pullme.User = User;
+    model.User = User;
     var Product = (function () {
         function Product(id, name, isDiscount, category, price) {
             this.id = id;
@@ -21,6 +21,7 @@ var pullme;
         }
         return Product;
     })();
+    model.Product = Product;
     var Store = (function () {
         function Store(id, lat, long, name, address, phone, products) {
             this.id = id;
@@ -33,4 +34,5 @@ var pullme;
         }
         return Store;
     })();
-})(pullme || (pullme = {}));
+    model.Store = Store;
+})(model || (model = {}));
