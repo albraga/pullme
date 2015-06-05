@@ -13,7 +13,6 @@ var pullme = (function($) {
     var setPosition = function (position) {
 	longi = position.coords.longitude;
 	lat = position.coords.latitude;
-	createMap();
     };
 
     var initMap = function() {
