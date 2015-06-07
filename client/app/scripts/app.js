@@ -57,7 +57,7 @@ var pullme = (function($) {
     var initMap = function() {
 	var mapOptions = {
 	    zoom: 2,
-	    center: new google.maps.LatLng(lat, longi)
+	    center: new google.maps.LatLng(0.0, 0.0)
 	};
 	map = new google.maps.Map(document.getElementById('main'), mapOptions);
     }
