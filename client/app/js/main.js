@@ -27,7 +27,7 @@ var pullme = (function($) {
 	google.maps.event.addDomListener(window, 'load', initMap());
     }
     
-    var app = {
+    var controller = {
 	initialize: function () {
 	    document.addEventListener('deviceready', this.onDeviceReady, false);
 	    this.onDeviceReady(); //uncomment for testing in Chrome browser
@@ -37,20 +37,18 @@ var pullme = (function($) {
 	    startMap();
 	}
     };
-    
-    app.initialize();
 
-    var ctr = {};
-    ctr.get = $.getJSON("http://pullme.pe.hu/slim/", function(data) {	
+    controller.get = $.getJSON("http://pullme.pe.hu/slim/", function(data) {	
 	var user = new model.User(1, lat, longi, data[0], data[1]);
 	alert(user.longi);
     });
     
-    return ctr;
+    return controller;
     
 })(jQuery);
 
 $(function() {
+    pullme.initialize();
     pullme.get();
 });
 
