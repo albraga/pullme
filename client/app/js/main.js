@@ -11,14 +11,17 @@ var pullme = (function($) {
     };
 
     var setPosition = function (position) {
-	longi = position.coords.longitude;
-	lat = position.coords.latitude;
+	setTimeout(function() {
+	    longi = position.coords.longitude;
+	    lat = position.coords.latitude;
+	    startMap();
+	}, 6000);
     };
 
     var initMap = function() {
 	var mapOptions = {
-	    zoom: 2,
-	    center: new google.maps.LatLng(0.0, 0.0)
+	    zoom: 14,
+	    center: new google.maps.LatLng(lat, longi)
 	};
 	map = new google.maps.Map(document.getElementById('main'), mapOptions);
     }
@@ -26,29 +29,30 @@ var pullme = (function($) {
     var startMap = function () {
 	google.maps.event.addDomListener(window, 'load', initMap());
     }
-    
-    var controller = {
+
+    var app = {
 	initialize: function () {
 	    document.addEventListener('deviceready', this.onDeviceReady, false);
 	    this.onDeviceReady(); //uncomment for testing in Chrome browser
 	},
 	onDeviceReady: function () {
 	    getLocation();
-	    startMap();
 	}
     };
-
-    controller.get = $.getJSON("http://pullme.pe.hu/slim/", function(data) {	
+    
+    var controller = {};
+    controller.get = $.getJSON("http://pullme.pe.hu/slim/", function(data) {
 	var user = new model.User(1, lat, longi, data[0], data[1]);
 	alert(user.longi);
     });
+
+    app.initialize();
     
     return controller;
     
 })(jQuery);
 
 $(function() {
-    pullme.initialize();
     pullme.get();
 });
 
