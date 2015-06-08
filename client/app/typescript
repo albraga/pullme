@@ -2803,4 +2803,144 @@ Loading /home/coder/.emacs.d/lisp/TypeScript.el (source)...done[K[H
 Username for 'https://github.com': albraga
 Password for 'https://albraga@github.com': 
 Counting objects: 7, done.
-Delta compr
+Delta compression using up to 2 threads.
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 908 bytes | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+To https://github.com/albraga/pullme.git
+   bed8bf2..cb269d5  master -> master
+Branch master set up to track remote branch master from origin.
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ git push -u origin masterexport no_proxy="localhost,127.0.0.1" [Acoder@4ef8a728f653:~/pullme/client/app/js$ export https_proxy=http://correiosnet\\82038198:Ingodwetrust_1@proxyac.correiosnet.int:80[Attp_proxy=http://correiosnet\8[1P2038198:Ingodwetrust_1@proxyac.correiosnet.int:80[AHTTPS_PROXY=http://correiosnet\[1@82038198:Ingodwetrust_1@proxyac.correiosnet.int:80[ATTP_PROXY=http://correiosnet\8[1P2038198:Ingodwetrust_1@proxyac.correiosnet.int:80[A[12Pgit push -u origin master
+[K[Acoder@4ef8a728f653:~/pullme/client/app/js$ git push -u origin master[1Pcommit -m "model.ts"add .[Kemacs main.js               emacs     ls
+main.js  model.js
+]0;coder@4ef8a728f653: ~/pullme/client/app/jscoder@4ef8a728f653:~/pullme/client/app/js$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/client/appcoder@4ef8a728f653:~/pullme/client/app$ cd ..
+]0;coder@4ef8a728f653: ~/pullme/clientcoder@4ef8a728f653:~/pullme/client$ cd ..
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ ls
+[0m[01;34mclient[0m  [01;34mserver[0m
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ cd server
+]0;coder@4ef8a728f653: ~/pullme/servercoder@4ef8a728f653:~/pullme/server$ ls
+[0m[01;34mslim[0m
+]0;coder@4ef8a728f653: ~/pullme/servercoder@4ef8a728f653:~/pullme/server$ cd slim
+]0;coder@4ef8a728f653: ~/pullme/server/slimcoder@4ef8a728f653:~/pullme/server/slim$ ls
+[0m[01;32mcomposer.json[0m  [01;32mcomposer.lock[0m  [01;34mvendor[0m
+]0;coder@4ef8a728f653: ~/pullme/server/slimcoder@4ef8a728f653:~/pullme/server/slim$ cd.  ..
+]0;coder@4ef8a728f653: ~/pullme/servercoder@4ef8a728f653:~/pullme/server$ cd ..
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ ls -la
+total 28
+drwxr-xr-x  5 coder coder 4096 Jun  1 17:06 [0m[01;34m.[0m
+drwxr-xr-x 28 coder coder 4096 Jun  1 13:34 [01;34m..[0m
+drwxr-xr-x  8 coder coder 4096 Jun  1 20:00 [01;34m.git[0m
+-rw-r--r--  1 coder coder   42 Jun  1 17:06 .gitignore
+-rw-r--r--  1 coder coder   40 May 10 16:09 .gitignore~
+drwxr-xr-x  9 coder coder 4096 Jun  1 19:45 [01;34mclient[0m
+drwxr-xr-x  3 coder coder 4096 May 29 14:01 [01;34mserver[0m
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ git add server
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ git add .
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ d fit   git a cio  ommit -m,  "adicionado server"
+[master e725e58] adicionado server
+ 80 files changed, 16742 insertions(+), 5674 deletions(-)
+ rename client/.gitignore => .gitignore (95%)
+ create mode 100644 client/.tscache/dev/hashes/model.ts-f6cb3c4d3508d6dbd5050a80fbdebf92
+ delete mode 100644 client/.tscache/dev/hashes/pullme.ts-f81e2f0184a0deb5c2f58517df2af03e
+ create mode 100644 client/app/scripts/app.js
+ delete mode 100644 client/app/scripts/require.js
+ delete mode 100644 client/app/ts/jquery.d.ts
+ delete mode 100644 client/app/ts/main.ts
+ rename client/app/ts/{main.ts~ => model.ts} (71%)
+ delete mode 100644 client/app/ts/require.d.ts
+ create mode 100644 client/app/typescript
+ delete mode 100755 server/controllers/.gitkeep
+ delete mode 100644 server/models/product.php
+ delete mode 100644 server/models/store.php
+ delete mode 100644 server/models/user.php
+ delete mode 100644 server/models/vicinity.php
+ create mode 100755 server/slim/composer.json
+ create mode 100755 server/slim/composer.lock
+ create mode 100755 server/slim/vendor/autoload.php
+ create mode 100755 server/slim/vendor/composer/ClassLoader.php
+ create mode 100755 server/slim/vendor/composer/autoload_classmap.php
+ create mode 100755 server/slim/vendor/composer/autoload_namespaces.php
+ create mode 100755 server/slim/vendor/composer/autoload_psr4.php
+ create mode 100755 server/slim/vendor/composer/autoload_real.php
+ create mode 100755 server/slim/vendor/composer/installed.json
+ create mode 100755 server/slim/vendor/slim/slim/.gitignore
+ create mode 100755 server/slim/vendor/slim/slim/.htaccess
+ create mode 100755 server/slim/vendor/slim/slim/.travis.yml
+ create mode 100755 server/slim/vendor/slim/slim/CONTRIBUTING.md
+ create mode 100755 server/slim/vendor/slim/slim/LICENSE
+ create mode 100755 server/slim/vendor/slim/slim/README.markdown
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Environment.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Exception/Pass.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Exception/Stop.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Helper/Set.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Http/Cookies.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Http/Headers.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Http/Request.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Http/Response.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Http/Util.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Log.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/LogWriter.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Middleware.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Middleware/ContentTypes.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Middleware/Flash.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Middleware/MethodOverride.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Middleware/SessionCookie.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Route.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Router.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/Slim.php
+ create mode 100755 server/slim/vendor/slim/slim/Slim/View.php
+ create mode 100755 server/slim/vendor/slim/slim/_index.php
+ create mode 100755 server/slim/vendor/slim/slim/composer.json
+ create mode 100755 server/slim/vendor/slim/slim/index.php
+ create mode 100755 server/slim/vendor/slim/slim/phpunit.xml.dist
+ create mode 100755 server/slim/vendor/slim/slim/tests/EnvironmentTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Foo.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Helper/SetTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Http/CookiesTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Http/HeadersTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Http/RequestTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Http/ResponseTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Http/UtilTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/LogTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/LogWriterTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Middleware/ContentTypesTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Middleware/FlashTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Middleware/MethodOverrideTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Middleware/PrettyExceptionsTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/Middleware/SessionCookieTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/MiddlewareTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/README
+ create mode 100755 server/slim/vendor/slim/slim/tests/RouteTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/RouterTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/SlimTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/ViewTest.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/bootstrap.php
+ create mode 100755 server/slim/vendor/slim/slim/tests/templates/test.php
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ git pus sh -u origin master
+ Username for 'https://github.com': albraga
+Password for 'https:// albraga@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/albraga/pullme.git/'
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ git push -u origin master
+
+^C
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ git push -u origin master
+Username for 'https://github.com': albraga
+Password for 'https://albraga@github.com': 
+Counting objects: 95, done.
+Delta compression using up to 2 threads.
+Compressing objects:   1% (1/83)   Compressing objects:   2% (2/83)   Compressing objects:   3% (3/83)   Compressing objects:   4% (4/83)   Compressing objects:   6% (5/83)   Compressing objects:   7% (6/83)   Compressing objects:   8% (7/83)   Compressing objects:   9% (8/83)   Compressing objects:  10% (9/83)   Compressing objects:  12% (10/83)   Compressing objects:  13% (11/83)   Compressing objects:  14% (12/83)   Compressing objects:  15% (13/83)   Compressing objects:  16% (14/83)   Compressing objects:  18% (15/83)   Compressing objects:  19% (16/83)   Compressing objects:  20% (17/83)   Compressing objects:  21% (18/83)   Compressing objects:  22% (19/83)   Compressing objects:  24% (20/83)   Compressing objects:  25% (21/83)   Compressing objects:  26% (22/83)   Compressing objects:  27% (23/83)   Compressing objects:  28% (24/83)   Compressing objects:  30% (25/83)   Compressing objects:  31% (26/83)   Compressing objects:  32% (27/83)   Compressing objects:  33% (28/83)   Compressing objects:  34% (29/83)   Compressing objects:  36% (30/83)   Compressing objects:  37% (31/83)   Compressing objects:  38% (32/83)   Compressing objects:  39% (33/83)   Compressing objects:  40% (34/83)   Compressing objects:  42% (35/83)   Compressing objects:  43% (36/83)   Compressing objects:  44% (37/83)   Compressing objects:  45% (38/83)   Compressing objects:  46% (39/83)   Compressing objects:  48% (40/83)   Compressing objects:  49% (41/83)   Compressing objects:  50% (42/83)   Compressing objects:  51% (43/83)   Compressing objects:  53% (44/83)   Compressing objects:  54% (45/83)   Compressing objects:  55% (46/83)   Compressing objects:  56% (47/83)   Compressing objects:  57% (48/83)   Compressing objects:  59% (49/83)   Compressing objects:  60% (50/83)   Compressing objects:  61% (51/83)   Compressing objects:  62% (52/83)   Compressing objects:  63% (53/83)   Compressing objects:  65% (54/83)   Compressing objects:  66% (55/83)   Compressing objects:  67% (56/83)   Compressing objects:  68% (57/83)   Compressing objects:  69% (58/83)   Compressing objects:  71% (59/83)   Compressing objects:  72% (60/83)   Compressing objects:  73% (61/83)   Compressing objects:  74% (62/83)   Compressing objects:  75% (63/83)   Compressing objects:  77% (64/83)   Compressing objects:  78% (65/83)   Compressing objects:  79% (66/83)   Compressing objects:  80% (67/83)   Compressing objects:  81% (68/83)   Compressing objects:  83% (69/83)   Compressing objects:  84% (70/83)   Compressing objects:  85% (71/83)   Compressing objects:  86% (72/83)   Compressing objects:  87% (73/83)   Compressing objects:  89% (74/83)   Compressing objects:  90% (75/83)   Compressing objects:  91% (76/83)   Compressing objects:  92% (77/83)   Compressing objects:  93% (78/83)   Compressing objects:  95% (79/83)   Compressing objects:  96% (80/83)   Compressing objects:  97% (81/83)   Compressing objects:  98% (82/83)   Compressing objects: 100% (83/83)   Compressing objects: 100% (83/83), done.
+Writing objects:   1% (1/95)   Writing objects:   2% (2/95)   Writing objects:   3% (3/95)   Writing objects:   4% (4/95)   Writing objects:   5% (5/95)   Writing objects:   6% (6/95)   Writing objects:   7% (7/95)   Writing objects:   8% (8/95)   Writing objects:   9% (9/95)   Writing objects:  10% (10/95)   Writing objects:  11% (11/95)   Writing objects:  12% (12/95)   Writing objects:  13% (13/95)   Writing objects:  14% (14/95)   Writing objects:  15% (15/95)   Writing objects:  16% (16/95)   Writing objects:  17% (17/95)   Writing objects:  18% (18/95)   Writing objects:  20% (19/95)   Writing objects:  21% (20/95)   Writing objects:  22% (21/95)   Writing objects:  23% (22/95)   Writing objects:  24% (23/95)   Writing objects:  25% (24/95)   Writing objects:  26% (25/95)   Writing objects:  27% (26/95)   Writing objects:  28% (27/95)   Writing objects:  29% (28/95)   Writing objects:  30% (29/95)   Writing objects:  31% (30/95)   Writing objects:  32% (31/95)   Writing objects:  33% (32/95)   Writing objects:  34% (33/95)   Writing objects:  35% (34/95)   Writing objects:  36% (35/95)   Writing objects:  38% (37/95)   Writing objects:  40% (38/95)   Writing objects:  41% (39/95)   Writing objects:  42% (40/95)   Writing objects:  43% (41/95)   Writing objects:  45% (43/95)   Writing objects:  46% (44/95)   Writing objects:  47% (45/95)   Writing objects:  48% (46/95)   Writing objects:  49% (47/95)   Writing objects:  51% (49/95)   Writing objects:  52% (50/95)   Writing objects:  53% (51/95)   Writing objects:  54% (52/95)   Writing objects:  55% (53/95)   Writing objects:  56% (54/95)   Writing objects:  58% (56/95)   Writing objects:  61% (58/95)   Writing objects:  62% (59/95)   Writing objects:  63% (60/95)   Writing objects:  64% (61/95)   Writing objects:  65% (62/95)   Writing objects:  66% (63/95)   Writing objects:  67% (64/95)   Writing objects:  68% (65/95)   Writing objects:  69% (66/95)   Writing objects:  70% (67/95)   Writing objects:  71% (68/95)   Writing objects:  72% (69/95)   Writing objects:  73% (70/95)   Writing objects:  74% (71/95)   Writing objects:  75% (72/95)   Writing objects:  76% (73/95)   Writing objects:  78% (75/95)   Writing objects:  81% (77/95)   Writing objects:  82% (78/95)   Writing objects:  83% (79/95)   Writing objects:  84% (80/95)   Writing objects:  85% (81/95)   Writing objects:  86% (82/95)   Writing objects:  87% (83/95)   Writing objects:  89% (85/95)   Writing objects:  90% (86/95)   Writing objects:  91% (87/95)   Writing objects:  92% (88/95)   Writing objects:  94% (90/95)   Writing objects:  95% (91/95)   Writing objects:  96% (92/95)   Writing objects:  97% (93/95)   Writing objects:  98% (94/95)   Writing objects: 100% (95/95)   Writing objects: 100% (95/95), 120.89 KiB | 0 bytes/s, done.
+Total 95 (delta 18), reused 0 (delta 0)
+To https://github.com/albraga/pullme.git
+   cb269d5..e725e58  master -> master
+Branch master set up to track remote branch master from origin.
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ [K]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ 
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ 
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ ~ [23~    entication failed for 'https://github.com/albraga/pullme.git/'
+bash: entication: command not found
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ [Kcoder@4ef8a7            [K]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ entication failed for 'https://github.com/albraga/pullme.git/'
+bash: entication: command not found
+]0;coder@4ef8a728f653: ~/pullmecoder@4ef8a728f653:~/pullme$ [Kcoder@4ef8a7            entication
