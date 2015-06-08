@@ -46,7 +46,7 @@ var pullme = (function($) {
 	get: function() {
 	    $.getJSON("http://pullme.pe.hu/slim/", function(data) {
 		var user = new model.User(1, lat, longi, data[0], data[1]);
-		alert('ueh');
+		alert(lat + "___" + longi);
 	    });
 	}
     }
