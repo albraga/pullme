@@ -1,16 +1,16 @@
-var pullme;
-(function (pullme) {
+var model;
+(function (model) {
     var User = (function () {
-        function User(id, lat, long, name, email) {
+        function User(id, lat, longi, name, email) {
             this.id = id;
             this.lat = lat;
-            this.long = long;
+            this.longi = longi;
             this.name = name;
             this.email = email;
         }
         return User;
     })();
-    pullme.User = User;
+    model.User = User;
     var Product = (function () {
         function Product(id, name, isDiscount, category, price) {
             this.id = id;
@@ -21,11 +21,12 @@ var pullme;
         }
         return Product;
     })();
+    model.Product = Product;
     var Store = (function () {
-        function Store(id, lat, long, name, address, phone, products) {
+        function Store(id, lat, longi, name, address, phone, products) {
             this.id = id;
             this.lat = lat;
-            this.long = long;
+            this.longi = longi;
             this.name = name;
             this.address = address;
             this.phone = phone;
@@ -33,4 +34,5 @@ var pullme;
         }
         return Store;
     })();
-})(pullme || (pullme = {}));
+    model.Store = Store;
+})(model || (model = {}));

@@ -1,16 +1,16 @@
-var pullme;
-(function (pullme) {
+var model;
+(function (model) {
     var User = (function () {
-        function User(id, lat, long, name, email) {
+        function User(id, lat, longi, name, email) {
             this.id = id;
             this.lat = lat;
-            this.long = long;
+            this.longi = longi;
             this.name = name;
             this.email = email;
         }
         return User;
     })();
-    pullme.User = User;
+    model.User = User;
     var Product = (function () {
         function Product(id, name, isDiscount, category, price) {
             this.id = id;
@@ -21,11 +21,12 @@ var pullme;
         }
         return Product;
     })();
+    model.Product = Product;
     var Store = (function () {
-        function Store(id, lat, long, name, address, phone, products) {
+        function Store(id, lat, longi, name, address, phone, products) {
             this.id = id;
             this.lat = lat;
-            this.long = long;
+            this.longi = longi;
             this.name = name;
             this.address = address;
             this.phone = phone;
@@ -33,20 +34,62 @@ var pullme;
         }
         return Store;
     })();
-})(pullme || (pullme = {}));
+    model.Store = Store;
+})(model || (model = {}));
 
-(function() {
+var pullme = (function($) {
 
+    var lat;
+    var longi;
+    var map;
+    
+    var getLocation = function () {
+	if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(setPosition);
+	}
+    };
 
-}(pullme));
+    var setPosition = function (position) {
+	longi = position.coords.longitude;
+	lat = position.coords.latitude;
+    };
 
+    var initMap = function() {
+	var mapOptions = {
+	    zoom: 2,
+	    center: new google.maps.LatLng(0.0, 0.0)
+	};
+	map = new google.maps.Map(document.getElementById('main'), mapOptions);
+    }
+
+    var startMap = function () {
+	google.maps.event.addDomListener(window, 'load', initMap());
+    }
+    
+    var app = {
+	initialize: function () {
+	    document.addEventListener('deviceready', this.onDeviceReady, false);
+	    this.onDeviceReady(); //uncomment for testing in Chrome browser
+	},
+	onDeviceReady: function () {
+	    getLocation();
+	    startMap();
+	}
+    };
+    
+    app.initialize();
+
+    var ctr = {};
+    ctr.get = $.getJSON("http://pullme.pe.hu/slim/", function(data) {	
+	var user = new model.User(1, lat, longi, data[0], data[1]);
+	alert(user.longi);
+    });
+    
+    return ctr;
+    
+})(jQuery);
 
 $(function() {
-
-    $.getJSON("http://pullme.pe.hu/slim/", function(data) {	
-	alert(data[0]);
-    });
-    alert("nada!");
-    
+    pullme.get();
 });
- 
+
