@@ -15,7 +15,18 @@ var pullme = (function($) {
 	    longi = position.coords.longitude;
 	    lat = position.coords.latitude;
 	    startMap();
+	    putUserMarker();
 	}, 2000);
+    };
+
+    var putUserMarker = function() {
+	var image = '../img/user.png';
+	var marker = new google.maps.Marker({
+	    position: map.getCenter(),
+	    map: map,
+	    title: 'Eu',
+	    icon: image
+	});
     };
 
     var initMap = function() {

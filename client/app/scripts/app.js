@@ -45,27 +45,41 @@ var pullme = (function($) {
     
     var getLocation = function () {
 	if (navigator.geolocation) {
-	    navigator.geolocation.getCurrentPosition(setPosition);
+	    navigator.geolocation.getCurrentPosition(setPositionAndStart);
 	}
     };
 
-    var setPosition = function (position) {
-	longi = position.coords.longitude;
-	lat = position.coords.latitude;
+    var setPositionAndStart = function (position) {
+	setTimeout(function() {
+	    longi = position.coords.longitude;
+	    lat = position.coords.latitude;
+	    startMap();
+	    putUserMarker();
+	}, 2000);
+    };
+
+    var putUserMarker = function() {
+	var image = '../img/user.png';
+	var marker = new google.maps.Marker({
+	    position: map.getCenter(),
+	    map: map,
+	    title: 'Eu',
+	    icon: image
+	});
     };
 
     var initMap = function() {
 	var mapOptions = {
-	    zoom: 2,
-	    center: new google.maps.LatLng(0.0, 0.0)
+	    zoom: 16,
+	    center: new google.maps.LatLng(lat, longi)
 	};
 	map = new google.maps.Map(document.getElementById('main'), mapOptions);
-    }
+    };
 
     var startMap = function () {
 	google.maps.event.addDomListener(window, 'load', initMap());
-    }
-    
+    };
+
     var app = {
 	initialize: function () {
 	    document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -73,23 +87,22 @@ var pullme = (function($) {
 	},
 	onDeviceReady: function () {
 	    getLocation();
-	    startMap();
 	}
     };
-    
+
     app.initialize();
-
-    var ctr = {};
-    ctr.get = $.getJSON("http://pullme.pe.hu/slim/", function(data) {	
-	var user = new model.User(1, lat, longi, data[0], data[1]);
-	alert(user.longi);
-    });
     
-    return ctr;
+    var controller = {
+	get: function() {
+	    $.getJSON("http://pullme.pe.hu/slim/", function(data) {
+		var user = new model.User(1, lat, longi, data[0], data[1]);
+		alert(lat + "___" + longi);
+	    });
+	}
+    }
+	
+    return controller;
     
-})(jQuery);
-
-$(function() {
-    pullme.get();
-});
+}
+)(jQuery);
 
