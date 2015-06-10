@@ -40,7 +40,7 @@ var model;
 var pullme = (function($) {
 
     var lat;
-    var longi;
+    var lon;
     var map;
     
     var getLocation = function () {
@@ -51,7 +51,7 @@ var pullme = (function($) {
 
     var setPositionAndStart = function (position) {
 	setTimeout(function() {
-	    longi = position.coords.longitude;
+	    lon = position.coords.longitude;
 	    lat = position.coords.latitude;
 	    startMap();
 	    putUserMarker();
@@ -70,17 +70,17 @@ var pullme = (function($) {
 
     var initMap = function() {
 	var mapOptions = {
-	    zoom: 16,
-	    center: new google.maps.LatLng(lat, longi)
+	    zoom: 15,
+	    center: new google.maps.LatLng(lat, lon)
 	};
-	map = new google.maps.Map(document.getElementById('main'), mapOptions);
+	map = new google.maps.Map(document.getElementById('map'), mapOptions);
     };
 
     var startMap = function () {
 	google.maps.event.addDomListener(window, 'load', initMap());
     };
 
-    var app = {
+    var application = {
 	initialize: function () {
 	    document.addEventListener('deviceready', this.onDeviceReady, false);
 	    this.onDeviceReady(); //uncomment for testing in Chrome browser
@@ -90,25 +90,15 @@ var pullme = (function($) {
 	}
     };
 
-    app.initialize();
+    application.initialize();
 
-    haversine = function() {
-	var radians = Array.prototype.map.call(arguments, function(deg) { return deg/180.0 * Math.PI; });
-	var lat1 = radians[0], lon1 = radians[1], lat2 = radians[2], lon2 = radians[3];
-	var R = 6372.8; // km
-	var dLat = lat2 - lat1;
-	var dLon = lon2 - lon1;
-	var a = Math.sin(dLat / 2) * Math.sin(dLat /2) +
-	    Math.sin(dLon / 2) * Math.sin(dLon /2) * Math.cos(lat1) * Math.cos(lat2);
-	var c = 2 * Math.asin(Math.sqrt(a));
-	return R * c;
-    };
-    
     var controller = {
-	get: function() {
-	    $.getJSON("http://pullme.pe.hu/slim/", function(data) {
-		var user = new model.User(1, lat, longi, data[0], data[1]);
-		alert(lat + "___" + longi);
+	//"http://pullme.pe.hu/slim/"
+	getStores: function(maxDistance, productName) {
+	    $.getJSON("http://192.168.59.103/temp/index.php/stores/" + maxDistance +"/"+
+		      productName +"/"+ lat +"/"+ lon, function(data) {
+		//var user = new model.User(1, lat, longi, data[0], data[1]);
+		alert(data);
 	    });
 	}
     }
@@ -119,5 +109,7 @@ var pullme = (function($) {
 )(jQuery);
 
 $(function() {
-    alert(haversine(-7.083333, -34.833333, -7.080000, -34.83300));
+    setTimeout(function() {
+	pullme.getStores(2000, "figado");
+    }, 3000);
 });

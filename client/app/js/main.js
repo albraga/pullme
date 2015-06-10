@@ -31,7 +31,7 @@ var pullme = (function($) {
 
     var initMap = function() {
 	var mapOptions = {
-	    zoom: 16,
+	    zoom: 15,
 	    center: new google.maps.LatLng(lat, lon)
 	};
 	map = new google.maps.Map(document.getElementById('map'), mapOptions);
