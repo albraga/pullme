@@ -69,8 +69,7 @@ var pullme = (function($) {
 }
 )(jQuery);
 
-$(function() {
-    setTimeout(function() {
-	pullme.getStores(2000, "figado");
-    }, 3000);
+$('#buscar').on('click', function() {
+   // pullme.getStores($('#productName').text(), $('#maxDistance').text());
+    alert("teste");
 });
