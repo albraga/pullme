@@ -1,7 +1,7 @@
 var pullme = (function($) {
 
     var lat;
-    var longi;
+    var lon;
     var map;
     
     var getLocation = function () {
@@ -12,7 +12,7 @@ var pullme = (function($) {
 
     var setPositionAndStart = function (position) {
 	setTimeout(function() {
-	    longi = position.coords.longitude;
+	    lon = position.coords.longitude;
 	    lat = position.coords.latitude;
 	    startMap();
 	    putUserMarker();
@@ -32,9 +32,9 @@ var pullme = (function($) {
     var initMap = function() {
 	var mapOptions = {
 	    zoom: 16,
-	    center: new google.maps.LatLng(lat, longi)
+	    center: new google.maps.LatLng(lat, lon)
 	};
-	map = new google.maps.Map(document.getElementById('main'), mapOptions);
+	map = new google.maps.Map(document.getElementById('map'), mapOptions);
     };
 
     var startMap = function () {
@@ -55,8 +55,9 @@ var pullme = (function($) {
 
     var controller = {
 	//"http://pullme.pe.hu/slim/"
-	get: function(id) {
-	    $.getJSON("http://192.168.59.103/temp/index.php/store/" + id, function(data) {
+	getStores: function(maxDistance, productName) {
+	    $.getJSON("http://192.168.59.103/temp/index.php/stores/" + maxDistance +"/"+
+		      productName +"/"+ lat +"/"+ lon, function(data) {
 		//var user = new model.User(1, lat, longi, data[0], data[1]);
 		alert(data);
 	    });
@@ -69,5 +70,7 @@ var pullme = (function($) {
 )(jQuery);
 
 $(function() {
-    pullme.get(1);
+    setTimeout(function() {
+	pullme.getStores(2000, "figado");
+    }, 3000);
 });
