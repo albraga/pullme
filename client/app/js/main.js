@@ -55,7 +55,7 @@ var pullme = (function($) {
 
     var controller = {
 	//"http://pullme.pe.hu/slim/"
-	getStores: function(maxDistance, productName) {
+	getStores: function(productName, maxDistance) {
 	    $.getJSON("http://192.168.59.103/temp/index.php/stores/" + maxDistance +"/"+
 		      productName +"/"+ lat +"/"+ lon, function(data) {
 		//var user = new model.User(1, lat, longi, data[0], data[1]);
@@ -70,6 +70,8 @@ var pullme = (function($) {
 )(jQuery);
 
 $('#buscar').on('click', function() {
-   // pullme.getStores($('#productName').text(), $('#maxDistance').text());
-    alert("teste");
+    pullme.getStores($('#productName').val(), $('#maxDistance').val());
+    $('#productName').val() = '';
+    $('#maxDistance').val() = '';
 });
+
