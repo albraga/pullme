@@ -41,6 +41,16 @@ var pullme = (function($) {
 	google.maps.event.addDomListener(window, 'load', initMap());
     };
 
+    var insertStoresMarkers = function() {
+	var image = '../img/cart3.png';
+	var marker2 = new google.maps.Marker({
+	    position: new google.maps.LatLng(lat, lon + 0.002),
+	    map: map,
+	    title: '',
+	    icon: image
+	});
+    }
+
     var application = {
 	initialize: function () {
 	    document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -57,9 +67,10 @@ var pullme = (function($) {
 	//"http://pullme.pe.hu/slim/"
 	getStores: function(productName, maxDistance) {
 	    $.getJSON("http://192.168.59.103/temp/index.php/stores/" + maxDistance +"/"+
-		      productName +"/"+ lat +"/"+ lon, function(data) {
-		//var user = new model.User(1, lat, longi, data[0], data[1]);
-		alert(data);
+		productName +"/"+ lat +"/"+ lon, function(data) {
+		    //var user = new model.User(1, lat, lon, data[0], data[1]);
+		    alert(data);
+		    insertStoresMarkers();
 	    });
 	}
     }
@@ -71,7 +82,6 @@ var pullme = (function($) {
 
 $('#buscar').on('click', function() {
     pullme.getStores($('#productName').val(), $('#maxDistance').val());
-    $('#productName').val() = '';
-    $('#maxDistance').val() = '';
+    $('input:text').val('');
 });
 
