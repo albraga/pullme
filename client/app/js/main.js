@@ -68,7 +68,7 @@ var pullme = (function($) {
 	getStores: function(productName, maxDistance) {
 	    $.getJSON("http://192.168.59.103/temp/index.php/stores/" + maxDistance +"/"+
 		productName +"/"+ lat +"/"+ lon, function(withinReach) {
-		    alert(withinReach.id);
+		    alert(withinReach[0].id);
 		    insertStoresMarkers();
 	    });
 	}
