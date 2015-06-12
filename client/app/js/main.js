@@ -67,9 +67,8 @@ var pullme = (function($) {
 	//"http://pullme.pe.hu/slim/"
 	getStores: function(productName, maxDistance) {
 	    $.getJSON("http://192.168.59.103/temp/index.php/stores/" + maxDistance +"/"+
-		productName +"/"+ lat +"/"+ lon, function(data) {
-		    //var user = new model.User(1, lat, lon, data[0], data[1]);
-		    alert(data);
+		productName +"/"+ lat +"/"+ lon, function(withinReach) {
+		    alert(withinReach.id);
 		    insertStoresMarkers();
 	    });
 	}
