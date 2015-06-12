@@ -11,7 +11,7 @@ class Haversine {
         $this->latB = deg2rad($latB);
         $this->lonB = deg2rad($lonB);
     }
-    public function get() {
+    public function getDistance() {
         $radiusOfEarth = 6371000;// Earth's radius in meters.
         $diffLatitude = $this->latB - $this->latA;
         $diffLongitude = $this->lonB - $this->lonA;
@@ -23,5 +23,3 @@ class Haversine {
         return $distance;
     }
 }
-$h = new Haversine(7, 34, 7.001, 34.001);
-echo $h->get();
