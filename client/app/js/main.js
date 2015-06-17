@@ -42,7 +42,7 @@ var pullme = (function($) {
     };
 
     var putUserMarker = function() {
-	var image = '../img/user.png';
+	var image = '../images/user.png';
 	var marker = new google.maps.Marker({
 	    position: map.getCenter(),
 	    map: map,

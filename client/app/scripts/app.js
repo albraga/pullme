@@ -42,6 +42,30 @@ var pullme = (function($) {
     var lat;
     var lon;
     var map;
+    var markers = [];
+
+    function addMarker(mLat, mLon, image, name) {
+	var marker = new google.maps.Marker({
+	    position: new google.maps.LatLng(mLat, mLon),
+	    title: name,
+	    icon: image
+	});
+	markers.push(marker);
+    }
+
+    function clearStores() {
+	for (var i = 0; i < markers.length; i++) {
+	    markers[i].setMap(null);
+	}
+	markers = [];
+    }
+
+    function showStores() {
+	for (var i = 0; i < markers.length; i++) {
+	    markers[i].setMap(map);
+	}
+    }
+    
     
     var getLocation = function () {
 	if (navigator.geolocation) {
@@ -50,16 +74,14 @@ var pullme = (function($) {
     };
 
     var setPositionAndStart = function (position) {
-	setTimeout(function() {
 	    lon = position.coords.longitude;
 	    lat = position.coords.latitude;
 	    startMap();
 	    putUserMarker();
-	}, 0);
     };
 
     var putUserMarker = function() {
-	var image = '../img/user.png';
+	var image = '../images/user.png';
 	var marker = new google.maps.Marker({
 	    position: map.getCenter(),
 	    map: map,
@@ -94,22 +116,25 @@ var pullme = (function($) {
 
     var controller = {
 	//"http://pullme.pe.hu/slim/"
-	getStores: function(maxDistance, productName) {
+	getStores: function(productName, maxDistance) {
 	    $.getJSON("http://192.168.59.103/temp/index.php/stores/" + maxDistance +"/"+
-		      productName +"/"+ lat +"/"+ lon, function(data) {
-		//var user = new model.User(1, lat, longi, data[0], data[1]);
-		alert(data);
+		      productName +"/"+ lat +"/"+ lon, function(stores) {
+			  clearStores();
+			  for (var x = 0; x < stores.length; ++x) {
+			      addMarker(stores[x].lat, stores[x].lon, stores[x].image, stores[x].name);
+			  }
+			  showStores();
 	    });
 	}
-    }
+    };
 	
     return controller;
     
 }
 )(jQuery);
 
-$(function() {
-    setTimeout(function() {
-	pullme.getStores(2000, "figado");
-    }, 3000);
+$('#buscar').on('click', function() {
+    pullme.getStores($('#productName').val(), $('#maxDistance').val());
+    $('input:text').val('');
 });
+

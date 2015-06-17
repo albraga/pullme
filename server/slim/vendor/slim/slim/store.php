@@ -9,8 +9,10 @@ class Store {
     public $name;
     public $address;
     public $phone;
+    public $products;
+    public $image;
 
-    public function __construct($id, $lat, $lon, $name, $address, $phone, $products) {
+    public function __construct($id, $lat, $lon, $name, $address, $phone, $products, $image) {
         $this->id = $id;
         $this->lat = $lat;
         $this->lon = $lon;
@@ -18,6 +20,7 @@ class Store {
         $this->address = $address;
         $this->phone = $phone;
         $this->products = $products;
+        $this->image = $image;
     }
 
     public function getDistanceFromUser($userLat, $userLon) {
@@ -36,6 +39,6 @@ class Store {
     }
 
     public function toArray() {
-        return array('id' => $this->id, 'lat' => $this->lat, 'lon' => $this->lon, 'name' => $this->name, 'address' => $this->address, 'phone' => $this->phone, 'products' => $this->products);
+        return array('id' => $this->id, 'lat' => $this->lat, 'lon' => $this->lon, 'name' => $this->name, 'address' => $this->address, 'phone' => $this->phone, 'products' => $this->products, 'image' => $this->image);
     }
 }

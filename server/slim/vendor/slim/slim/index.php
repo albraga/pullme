@@ -7,14 +7,13 @@ $app = new \Slim\Slim();
 $app->get('/stores/:maxDistance/:productName/:lat/:lon',
           function($maxDistance, $productName, $lat, $lon) use($app) {
 
-              $st1 = new Store(1, $lat, $lon + 0.002,'a','b','c','d');
-              $st2 = new Store(2, $lat + 0.002, $lon,'e','f','g','h');
-              $st3 = new Store(3, $lat, $lon + 0.003,'i','j','k','l');
-              $st4 = new Store(4, $lat + 0.003, $lon,'m','n','o','p');
+              $st1 = new Store(1, $lat, $lon + 0.002,'super box','b','c','d','../images/cart1.png');
+              $st2 = new Store(2, $lat + 0.003, $lon,'carrefour','f','g','h','../images/cart2.png');
+              $st3 = new Store(3, $lat, $lon + 0.004,'todo ida','j','k','l','../images/cart3.png');
 
               $withinReach = array();
 
-              $stores = array($st1, $st2, $st3, $st4);
+              $stores = array($st1, $st2, $st3);
               
                foreach($stores as $store) {
                   if ($store->getDistanceFromUser($lat, $lon) <= $maxDistance) {
