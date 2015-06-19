@@ -76,9 +76,10 @@ var pullme = (function($) {
     application.initialize();
 
     var controller = {
-	//"http://pullme.pe.hu/slim/"
+	//"http://pullme.pe.hu/slim/index.php/stores"
+	//"http://192.168.59.103/temp/index.php/stores/"
 	getStores: function(productName, maxDistance) {
-	    $.getJSON("http://192.168.59.103/temp/index.php/stores/" + maxDistance +"/"+
+	    $.getJSON("http://pullme.pe.hu/slim/index.php/stores/" + maxDistance +"/"+
 		      productName +"/"+ lat +"/"+ lon, function(stores) {
 			  clearStores();
 			  for (var x = 0; x < stores.length; ++x) {
