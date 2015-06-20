@@ -275,15 +275,15 @@ module.exports = function (grunt) {
          }
        }
      },
-     uglify: {
-       dist: {
-         files: {
-           '<%= config.dist %>/scripts/scripts.js': [
-             '<%= config.dist %>/scripts/scripts.js'
-           ]
-         }
-       }
-     },
+
+      uglify: {
+	  dist: {
+	      files: {
+		  'dist/scripts/app.js': ['app/scripts/app.js']
+	      }
+	  }
+      },
+      
     concat: {
 	dist: {
 	    // the files to concatenate
