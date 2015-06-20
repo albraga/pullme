@@ -1,1 +1,0 @@
-"/home/coder/pullme/client/app/ts/model.ts" --removeComments --target ES5 --out app/js/model.js

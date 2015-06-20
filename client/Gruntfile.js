@@ -1,4 +1,4 @@
-// Generated on 2015-05-08 using
+// Generated on 2015-06-20 using
 // generator-webapp 0.5.1
 'use strict';
 
@@ -160,7 +160,7 @@ module.exports = function (grunt) {
       }
     },
 
-    // Automatically inject Bower components to the HTML file
+    // Automatically inject Bower components into the HTML file
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
@@ -252,46 +252,31 @@ module.exports = function (grunt) {
       }
     },
 
-      ts: {
-	  options: {
-	      sourceMap: false
-	  },
-	  dev: {
-	      src: ["app/ts/*.ts"],
-	      out: 'app/js/model.js'
-	  }
-      },
-
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
     // wish to use the Usemin blocks.
-     cssmin: {
-       dist: {
-         files: {
-           '<%= config.dist %>/styles/main.css': [
-             '.tmp/styles/{,*/}*.css',
-             '<%= config.app %>/styles/{,*/}*.css'
-           ]
-         }
-       }
-     },
-
-      uglify: {
-	  dist: {
-	      files: {
-		  'dist/scripts/app.js': ['app/scripts/app.js']
-	      }
-	  }
-      },
-      
-    concat: {
-	dist: {
-	    // the files to concatenate
-	    src: ['app/js/model.js','app/js/main.js'],
-	    // the location of the resulting JS file
-	    dest: 'app/scripts/app.js'
-	}
-    },
+    // cssmin: {
+    //   dist: {
+    //     files: {
+    //       '<%= config.dist %>/styles/main.css': [
+    //         '.tmp/styles/{,*/}*.css',
+    //         '<%= config.app %>/styles/{,*/}*.css'
+    //       ]
+    //     }
+    //   }
+    // },
+    // uglify: {
+    //   dist: {
+    //     files: {
+    //       '<%= config.app %>/scripts/main.js': [
+    //         '<%= config.app %>/js/main.js'
+    //       ]
+    //     }
+    //   }
+    // },
+    // concat: {
+    //   dist: {}
+    // },
 
     // Copies remaining files to places other tasks can use
     copy: {
@@ -382,11 +367,8 @@ module.exports = function (grunt) {
     ]);
   });
 
-grunt.loadNpmTasks('grunt-ts');
-    
   grunt.registerTask('build', [
-      'clean:dist',
-      'ts',
+    'clean:dist',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
@@ -400,9 +382,9 @@ grunt.loadNpmTasks('grunt-ts');
     'htmlmin'
   ]);
 
- grunt.registerTask('default', [
+  grunt.registerTask('default', [
     'newer:jshint',
     'test',
-      'build'
+    'build'
   ]);
 };

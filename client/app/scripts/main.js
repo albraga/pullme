@@ -1,1 +1,102 @@
-var model;!function(a){var b=function(){function a(a,b,c,d,e){this.id=a,this.lat=b,this.longi=c,this.name=d,this.email=e}return a}();a.User=b;var c=function(){function a(a,b,c,d,e){this.id=a,this.name=b,this.isDiscount=c,this.category=d,this.price=e}return a}();a.Product=c;var d=function(){function a(a,b,c,d,e,f,g){this.id=a,this.lat=b,this.longi=c,this.name=d,this.address=e,this.phone=f,this.products=g}return a}();a.Store=d}(model||(model={}));var pullme=function(a){function b(a,b,c,d){var e=new google.maps.Marker({position:new google.maps.LatLng(a,b),title:d,icon:c});h.push(e)}function c(){for(var a=0;a<h.length;a++)h[a].setMap(null);h=[]}function d(){for(var a=0;a<h.length;a++)h[a].setMap(g)}var e,f,g,h=[],i=function(){navigator.geolocation&&navigator.geolocation.getCurrentPosition(j)},j=function(a){f=a.coords.longitude,e=a.coords.latitude,m(),k()},k=function(){var a="../images/user.png";new google.maps.Marker({position:g.getCenter(),map:g,title:"Eu",icon:a})},l=function(){var a={zoom:15,center:new google.maps.LatLng(e,f)};g=new google.maps.Map(document.getElementById("map"),a)},m=function(){google.maps.event.addDomListener(window,"load",l())},n={initialize:function(){document.addEventListener("deviceready",this.onDeviceReady,!1),this.onDeviceReady()},onDeviceReady:function(){i()}};n.initialize();var o={getStores:function(g,h){a.getJSON("http://pullme.pe.hu/slim/index.php/stores/"+h+"/"+g+"/"+e+"/"+f,function(a){c();for(var e=0;e<a.length;++e)b(a[e].lat,a[e].lon,a[e].image,a[e].name);d()})}};return o}(jQuery);$("#buscar").on("click",function(){pullme.getStores($("#productName").val(),$("#maxDistance").val()),$("input:text").val("")});
+var pullme = (function($) {
+
+    var lat;
+    var lon;
+    var map;
+    var markers = [];
+
+    function addMarker(mLat, mLon, image, name) {
+	var marker = new google.maps.Marker({
+	    position: new google.maps.LatLng(mLat, mLon),
+	    title: name,
+	    icon: image
+	});
+	markers.push(marker);
+    }
+
+    function clearStores() {
+	for (var i = 0; i < markers.length; i++) {
+	    markers[i].setMap(null);
+	}
+	markers = [];
+    }
+
+    function showStores() {
+	for (var i = 0; i < markers.length; i++) {
+	    markers[i].setMap(map);
+	}
+    }
+    
+    
+    var getLocation = function () {
+	if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(setPositionAndStart);
+	}
+    };
+
+    var setPositionAndStart = function (position) {
+	    lon = position.coords.longitude;
+	    lat = position.coords.latitude;
+	    startMap();
+	    putUserMarker();
+    };
+
+    var putUserMarker = function() {
+	var image = '../images/user.png';
+	var marker = new google.maps.Marker({
+	    position: map.getCenter(),
+	    map: map,
+	    title: 'Eu',
+	    icon: image
+	});
+    };
+
+    var initMap = function() {
+	var mapOptions = {
+	    zoom: 15,
+	    center: new google.maps.LatLng(lat, lon)
+	};
+	map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    };
+
+    var startMap = function () {
+	google.maps.event.addDomListener(window, 'load', initMap());
+    };
+
+    var application = {
+	initialize: function () {
+	    document.addEventListener('deviceready', this.onDeviceReady, false);
+	    this.onDeviceReady(); //uncomment for testing in Chrome browser
+	},
+	onDeviceReady: function () {
+	    getLocation();
+	}
+    };
+
+    application.initialize();
+
+    var controller = {
+	//"http://pullme.pe.hu/slim/index.php/stores"
+	//"http://192.168.59.103/temp/index.php/stores/"
+	getStores: function(productName, maxDistance) {
+	    $.getJSON("http://pullme.pe.hu/slim/index.php/stores/" + maxDistance +"/"+
+		      productName +"/"+ lat +"/"+ lon, function(stores) {
+			  clearStores();
+			  for (var x = 0; x < stores.length; ++x) {
+			      addMarker(stores[x].lat, stores[x].lon, stores[x].image, stores[x].name);
+			  }
+			  showStores();
+	    });
+	}
+    };
+	
+    return controller;
+    
+}
+)(jQuery);
+
+$('#buscar').on('click', function() {
+    pullme.getStores($('#productName').val(), $('#maxDistance').val());
+    $('input:text').val('');
+});
+
