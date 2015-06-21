@@ -1,4 +1,4 @@
-var pullme = (function($) {
+var pullme = (function(window, $) {
 
     var lat;
     var lon;
@@ -92,8 +92,7 @@ var pullme = (function($) {
 	
     return controller;
     
-}
-)(jQuery);
+})(window, jQuery);
 
 $('#buscar').on('click', function() {
     pullme.getStores($('#productName').val(), $('#maxDistance').val());
