@@ -42,12 +42,12 @@ var pullme = (function($) {
     };
 
     var putUserMarker = function() {
-	var image = '../images/user.png';
+	var userImage = '../images/user.png';
 	var marker = new google.maps.Marker({
 	    position: map.getCenter(),
 	    map: map,
 	    title: 'Eu',
-	    icon: image
+	    icon: userImage
 	});
     };
 
@@ -66,7 +66,7 @@ var pullme = (function($) {
     var application = {
 	initialize: function () {
 	    document.addEventListener('deviceready', this.onDeviceReady, false);
-	    this.onDeviceReady(); //uncomment for testing in Chrome browser
+	    //this.onDeviceReady(); //uncomment for testing in Chrome browser
 	},
 	onDeviceReady: function () {
 	    getLocation();
