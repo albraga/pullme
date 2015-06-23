@@ -27,7 +27,6 @@ var pullme = (function($) {
 	}
     }
     
-    
     var getLocation = function () {
 	if (navigator.geolocation) {
 	    navigator.geolocation.getCurrentPosition(setPositionAndStart);
@@ -42,7 +41,7 @@ var pullme = (function($) {
     };
 
     var putUserMarker = function() {
-	var userImage = '../images/user.png';
+	var userImage = 'images/user.png';
 	var marker = new google.maps.Marker({
 	    position: map.getCenter(),
 	    map: map,
@@ -66,7 +65,7 @@ var pullme = (function($) {
     var application = {
 	initialize: function () {
 	    document.addEventListener('deviceready', this.onDeviceReady, false);
-	    //this.onDeviceReady(); //uncomment for testing in Chrome browser
+	   // this.onDeviceReady(); //uncomment for testing in Chrome browser
 	},
 	onDeviceReady: function () {
 	    getLocation();
