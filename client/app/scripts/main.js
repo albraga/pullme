@@ -4,6 +4,7 @@ var pullme = (function($) {
     var lon;
     var map;
     var markers = [];
+    var mDistance;
 
     function addMarker(mLat, mLon, image, name) {
 	var marker = new google.maps.Marker({
@@ -22,6 +23,7 @@ var pullme = (function($) {
     }
 
     function showStores() {
+	mDistance >= 2000 ? map.setZoom(14) : map.setZoom(16);
 	for (var i = 0; i < markers.length; i++) {
 	    markers[i].setMap(map);
 	}
@@ -81,6 +83,7 @@ var pullme = (function($) {
 	//"http://pullme.pe.hu/slim/index.php/stores"
 	//"http://192.168.59.103/temp/index.php/stores/"
 	getStores: function(productName, maxDistance) {
+	    mDistance = maxDistance;
 	    $.getJSON("http://192.168.59.103/index.php/stores/" + maxDistance +"/"+
 		      productName +"/"+ lat +"/"+ lon, function(stores) {
 			  clearStores();
