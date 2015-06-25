@@ -5,6 +5,7 @@ var pullme = (function($) {
     var map;
     var markers = [];
     var mDistance;
+    var circle;
 
     function addMarker(mLat, mLon, image, name) {
 	var marker = new google.maps.Marker({
@@ -16,6 +17,9 @@ var pullme = (function($) {
     }
 
     function clearStores() {
+	if(circle) {
+	    circle.setMap(null);
+	}
 	for (var i = 0; i < markers.length; i++) {
 	    markers[i].setMap(null);
 	}
@@ -27,6 +31,17 @@ var pullme = (function($) {
 	for (var i = 0; i < markers.length; i++) {
 	    markers[i].setMap(map);
 	}
+	var circleOptions = {
+	    strokeColor: '#FF0000',
+	    strokeOpacity: 0.1,
+	    strokeWeight: 2,
+	    fillColor: '#FF0000',
+	    fillOpacity: 0.1,
+	    map: map,
+	    center: map.getCenter(),
+	    radius: parseInt(mDistance)
+	};
+	circle = new google.maps.Circle(circleOptions);
     }
     
     var getLocation = function () {
