@@ -53,7 +53,10 @@ var pullme = (function($) {
     var initMap = function() {
 	var mapOptions = {
 	    zoom: 15,
-	    center: new google.maps.LatLng(lat, lon)
+	    center: new google.maps.LatLng(lat, lon),
+	    panControl: true,
+	    zoomControl: true,
+	    scaleControl: true
 	};
 	map = new google.maps.Map(document.getElementById('map'), mapOptions);
     };
@@ -65,7 +68,7 @@ var pullme = (function($) {
     var application = {
 	initialize: function () {
 	    document.addEventListener('deviceready', this.onDeviceReady, false);
-	   // this.onDeviceReady(); //uncomment for testing in Chrome browser
+	    this.onDeviceReady(); //uncomment for testing in Chrome browser
 	},
 	onDeviceReady: function () {
 	    getLocation();
@@ -78,7 +81,7 @@ var pullme = (function($) {
 	//"http://pullme.pe.hu/slim/index.php/stores"
 	//"http://192.168.59.103/temp/index.php/stores/"
 	getStores: function(productName, maxDistance) {
-	    $.getJSON("http://pullme.pe.hu/slim/index.php/stores/" + maxDistance +"/"+
+	    $.getJSON("http://192.168.59.103/index.php/stores/" + maxDistance +"/"+
 		      productName +"/"+ lat +"/"+ lon, function(stores) {
 			  clearStores();
 			  for (var x = 0; x < stores.length; ++x) {
