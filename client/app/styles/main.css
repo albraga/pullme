@@ -7,6 +7,10 @@ html {
     margin-bottom: 15px;
 }
 
+#maxDistance {
+    margin-left: 200px;
+}
+
 #seletor {
     position: absolute;
     width: 200px;
