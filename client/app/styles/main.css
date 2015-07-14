@@ -8,8 +8,13 @@ html {
 }
 
 #maxDistance {
-    margin-left: 200px;
+    margin-left: 50px;
 }
+
+#buscar {
+    margin-left: 80px;
+}
+
 
 #seletor {
     position: absolute;
