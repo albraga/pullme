@@ -1,4 +1,6 @@
 <?php
+
+require 'mysql.php';
 require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 include('store.php');
