@@ -1,3 +1,5 @@
+<?php
+
 function getConnection() {
     $conn = null;
     try {
@@ -10,4 +12,17 @@ function getConnection() {
         echo 'ERROR: ' . $e->getMessage();
     }
     return $conn;
+}
+
+function getProdutos() {
+    $sql_query = "select name FROM product";
+    try {
+        $dbCon = getConnection();
+        $stmt   = $dbCon->query($sql_query);
+        $produtos  = $stmt->fetchAll(PDO::FETCH_OBJ);
+        $dbCon = null;
+    } catch(PDOException $e) {
+        echo '{"error":{"text":'. $e->getMessage() .'}}';
+    }
+    return $produtos;
 }
