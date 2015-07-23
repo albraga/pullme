@@ -14,15 +14,15 @@ function getConnection() {
     return $conn;
 }
 
-function getProdutos() {
-    $sql_query = "select name FROM product";
+function getStores() {
+    $sql_query = "select * FROM store";
     try {
         $dbCon = getConnection();
         $stmt   = $dbCon->query($sql_query);
-        $produtos  = $stmt->fetchAll(PDO::FETCH_OBJ);
+        $stores  = $stmt->fetchAll(PDO::FETCH_OBJ);
         $dbCon = null;
     } catch(PDOException $e) {
         echo '{"error":{"text":'. $e->getMessage() .'}}';
     }
-    return $produtos;
+    return $stores;
 }
