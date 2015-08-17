@@ -9,17 +9,15 @@ class Store {
     public $name;
     public $address;
     public $phone;
-    public $products;
     public $image;
 
-    public function __construct($id, $lat, $lon, $name, $address, $phone, $products, $image) {
+    public function __construct($id, $lat, $lon, $name, $address, $phone, $image) {
         $this->id = $id;
         $this->lat = $lat;
         $this->lon = $lon;
         $this->name = $name;
         $this->address = $address;
         $this->phone = $phone;
-        $this->products = $products;
         $this->image = $image;
     }
 
@@ -39,6 +37,6 @@ class Store {
     }
 
     public function toArray() {
-        return array('id' => $this->id, 'lat' => $this->lat, 'lon' => $this->lon, 'name' => $this->name, 'address' => $this->address, 'phone' => $this->phone, 'products' => $this->products, 'image' => $this->image);
+        return array('id' => $this->id, 'lat' => $this->lat, 'lon' => $this->lon, 'name' => $this->name, 'address' => $this->address, 'phone' => $this->phone, 'image' => $this->image);
     }
 }
