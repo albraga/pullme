@@ -3,19 +3,17 @@ include('haversine.php');
 
 class Store {
 
-    public $id;
+    public $store_name;
     public $lat;
     public $lon;
-    public $name;
     public $address;
     public $phone;
     public $image;
 
-    public function __construct($id, $lat, $lon, $name, $address, $phone, $image) {
-        $this->id = $id;
+    public function __construct($store_name, $lat, $lon, $address, $phone, $image) {
+        $this->store_name = $store_name;
         $this->lat = $lat;
         $this->lon = $lon;
-        $this->name = $name;
         $this->address = $address;
         $this->phone = $phone;
         $this->image = $image;
@@ -37,6 +35,6 @@ class Store {
     }
 
     public function toArray() {
-        return array('id' => $this->id, 'lat' => $this->lat, 'lon' => $this->lon, 'name' => $this->name, 'address' => $this->address, 'phone' => $this->phone, 'image' => $this->image);
+        return array('store_name' => $this->store_name, 'lat' => $this->lat, 'lon' => $this->lon, 'address' => $this->address, 'phone' => $this->phone, 'image' => $this->image);
     }
 }

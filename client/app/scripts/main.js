@@ -103,7 +103,7 @@ var pullme = (function($) {
 		      productName +"/"+ lat +"/"+ lon, function(stores) {
 			  clearStores();
 			  for (var x = 0; x < stores.length; ++x) {
-			      addMarker(stores[x].lat, stores[x].lon, stores[x].image, stores[x].name);
+			      addMarker(stores[x].lat, stores[x].lon, stores[x].image, stores[x].store_name);
 			  }
 			  showStores();
 	    });

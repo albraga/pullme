@@ -14,11 +14,13 @@ function getConnection() {
     return $conn;
 }
 
-function getStores() {
-    $sql_query = "select * FROM store";
+function getStores($productName) {
+    $sql_query =
+"SELECT * FROM store s INNER JOIN store_product sp ON s.store_name = sp.store_name WHERE sp.product_name = :productName AND sp.ispromo = true ";
     try {
         $dbCon = getConnection();
-        $stmt   = $dbCon->query($sql_query);
+        $stmt   = $dbCon->prepare($sql_query);
+        $stmt->execute(array(':productName' => $productName));
         $stores  = $stmt->fetchAll(PDO::FETCH_OBJ);
         $dbCon = null;
     } catch(PDOException $e) {

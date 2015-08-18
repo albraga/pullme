@@ -8,11 +8,11 @@ include('store.php');
 $app = new \Slim\Slim();
 $app->get('/stores/:maxDistance/:productName/:lat/:lon',
           function($maxDistance, $productName, $lat, $lon) use($app) {
-              $storesTemp = getStores();
+              $storesTemp = getStores($productName);
               $storess = array();
 
               foreach($storesTemp as $o) {
-  $storess[] = new Store($o->id_store,$o->lat,$o->lon,$o->name,$o->address,$o->phone,$o->products,$o->image);
+  $storess[] = new Store($o->store_name,$o->lat,$o->lon,$o->address,$o->phone,$o->image);
               }              
 
               $withinReach = array();
